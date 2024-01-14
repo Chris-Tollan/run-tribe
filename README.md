@@ -121,11 +121,11 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 ### Frameworks, Libraries & Programs Used
 
 - [Balsamiq](https://balsamiq.com/) was used to create the Wireframes
-- [Lucid](https://lucid.app/documents#/documents?folder_id=recent) was used to create the ER Diagrams
+- [Lucid](https://lucid.app/) was used to create the ER Diagrams
 - [Coolors](https://coolors.co/) was used to create the colour palette.
 - Github was used as the repository for the projects code after being pushed from Git
 - CodeAnywhere was used for version control, allowing me to commit changes and push them to GitHub directly from the CodeAnywhere terminal. It was the primary tool used for creating and editing all the code.
-- [Google Fonts](https://fonts.google.com/) used for the Montserrat and Poiret One fonts
+- [Google Fonts](https://fonts.google.com/) used for the fonts
 - [Font Awesome](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes
 - [Bootstrap](https://getbootstrap.com/) was used to build a responsive website quicker
 - [Django](https://www.djangoproject.com/) was used as the framework of the application

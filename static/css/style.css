@@ -31,3 +31,13 @@ body {
 .footer {
     color: #FFB139;
 }
+
+.card {
+    background-color: #605E6250;
+    border: 1px solid #605E62;
+}
+
+.page-link {
+    background-color: #FFB139;
+    border: 1px solid #605E62;
+}

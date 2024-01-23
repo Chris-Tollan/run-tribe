@@ -37,3 +37,17 @@ body {
     border: 1px solid #605E62;
 }
 
+.post-link {
+    text-decoration: none;
+    color: black;
+}
+
+.post-link:hover {
+    color: #FFB139;
+}
+
+.page-link {
+    text-decoration: none;
+    color: #605E62;
+    background-color: #FFB139;
+}

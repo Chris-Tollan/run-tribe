@@ -1,0 +1,53 @@
+body {
+    background-color: #EFEFF0;
+    font-family: "Roboto Condensed";
+}
+
+.logo {
+    font-family: "Bebas Neue";
+    color: #FFB139;
+    font-size: 5rem;
+}
+
+.navbar-color {
+    background-color: #605E62;
+}
+
+.nav-link {
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+    color: #FFB139 !important;
+}
+
+.dark-bg {
+    background-color: #605E62;
+}
+
+.navbar-text {
+    color: #EFEFF0 !important;
+    font-size: 2rem;
+}
+
+.footer {
+    color: #FFB139;
+}
+
+.card {
+    background-color: #605E6250;
+    border: 1px solid #605E62;
+}
+
+.post-link {
+    text-decoration: none;
+    color: black;
+}
+
+.post-link:hover {
+    color: #FFB139;
+}
+
+.page-link {
+    text-decoration: none;
+    color: #605E62;
+    background-color: #FFB139;
+}

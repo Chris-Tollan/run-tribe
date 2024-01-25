@@ -29,6 +29,17 @@ body {
     font-size: 2rem;
 }
 
+.hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.hero-image {
+    height: 500px;
+    width: auto;    
+}
+
 .footer {
     color: #FFB139;
 }

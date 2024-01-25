@@ -17,6 +17,7 @@ body {
     font-family: "Bebas Neue";
     font-size: 2rem;
     color: #FFB139 !important;
+    display: inline-block;
 }
 
 .dark-bg {

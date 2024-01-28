@@ -63,3 +63,20 @@ body {
     color: #605E62;
     background-color: #FFB139;
 }
+
+.link {
+    color: #FFB139;
+    font-weight: bold;
+}
+
+.btn-signup {
+    background-color: #FFB139;
+    color: #605E62;
+    font-weight: bold;
+}
+
+.btn-signup:hover {
+    text-decoration: none;
+    background-color: #605E62;
+    color: #FFB139;
+}

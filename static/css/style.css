@@ -42,11 +42,12 @@ body {
 
 .footer {
     color: #FFB139;
+    font-weight: bold;
 }
 
 .card {
     background-color: #605E6250;
-    border: 1px solid #605E62;
+    border: 3px solid #FFB139;
 }
 
 .post-link {

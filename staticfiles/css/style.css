@@ -17,6 +17,7 @@ body {
     font-family: "Bebas Neue";
     font-size: 2rem;
     color: #FFB139 !important;
+    display: inline-block;
 }
 
 .dark-bg {
@@ -28,13 +29,25 @@ body {
     font-size: 2rem;
 }
 
+.hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.hero-image {
+    height: 500px;
+    width: auto;    
+}
+
 .footer {
     color: #FFB139;
+    font-weight: bold;
 }
 
 .card {
     background-color: #605E6250;
-    border: 1px solid #605E62;
+    border: 3px solid #FFB139;
 }
 
 .post-link {
@@ -50,4 +63,21 @@ body {
     text-decoration: none;
     color: #605E62;
     background-color: #FFB139;
+}
+
+.link {
+    color: #FFB139;
+    font-weight: bold;
+}
+
+.btn-signup {
+    background-color: #FFB139;
+    color: #605E62;
+    font-weight: bold;
+}
+
+.btn-signup:hover {
+    text-decoration: none;
+    background-color: #605E62;
+    color: #FFB139;
 }

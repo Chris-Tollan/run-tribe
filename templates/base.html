@@ -67,7 +67,7 @@
                     {% endif %}
                 </ul>
                 <span class="navbar-text text-muted">
-                    Join the Tribe
+                    <h2>Join the Tribe</h2>
                 </span>
             </div>
         </div>
@@ -79,6 +79,11 @@
     </section>
 
     <main class="flex-shrink-0 main-bg">
+        {% if user.is_authenticated %}
+        <p class="text-end m-3">Welcome back {{ user.username }}!</p>
+        {% else %}
+        <p class="text-end m-3">You are not currently logged in...</p>
+        {% endif %}
 
         {% block content %}
         <!-- Content Goes here -->

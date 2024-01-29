@@ -38,6 +38,10 @@ def post_detail(request, slug):
             comment.author = request.user
             comment.post = post
             comment.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Your comment is with admin for approval'
+            )
 
     comment_form = CommentForm()
 

@@ -70,13 +70,15 @@ body {
     font-weight: bold;
 }
 
-.btn-signup {
+.btn-signup,
+.btn-edit {
     background-color: #FFB139;
     color: #605E62;
     font-weight: bold;
 }
 
-.btn-signup:hover {
+.btn-signup:hover,
+.btn-edit:hover {
     text-decoration: none;
     background-color: #605E62;
     color: #FFB139;

@@ -77,6 +77,12 @@ body {
     font-weight: bold;
 }
 
+.btn-delete {
+    background-color: red;
+    color: #EFEFF0;
+    font-weight: white;
+}
+
 .btn-signup:hover,
 .btn-edit:hover {
     text-decoration: none;

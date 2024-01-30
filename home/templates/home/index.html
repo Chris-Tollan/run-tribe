@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
+{% load crispy_forms_tags %}
+
 <div class="container">
     <div class="row">
         <div class="col card mb-2  mt-3 left  top">
@@ -37,7 +39,12 @@
                 <h2>Contact Us</h2>
                 <p>If you have any questions for us, any ideas for content on 
                     this site or any runs you'd like to suggest then please 
-                    get in touch</p>
+                    get in touch by filling out the form below...</p>
+                <form method="post">
+                    {{ contact_us | crispy }}
+                    {% csrf_token %}
+                    <button class="btn btn-signup" type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </div>

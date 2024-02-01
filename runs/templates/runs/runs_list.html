@@ -14,7 +14,13 @@
                     <div class="card-body">
                         <h4 class="title-text">{{ run.title }}</h5>
                         <p>{{ run.excerpt }}</p>
-                        <a href="{% url 'post_detail' run.slug %}" class="btn btn-book">Book</a>
+                        {% if user.is_authenticated %}
+                        <a href="{{ home }}" class="btn btn-book">Book</a>
+                        {% else %}
+                        <p>Please <a class="link" href="{{ login_url }}">Log in</a> to book.</p>
+                        <p>If you haven't created an account yet then <a class="link" href="{{ signup_url }}">sign up</a>
+                            first.</p>
+                        {% endif %}
                     </div>
                 </div>
             </div>

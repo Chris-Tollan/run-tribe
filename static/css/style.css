@@ -43,6 +43,12 @@ body {
     color: #FFB139;
 }
 
+.title-text {
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .card {
     background-color: #605E6250;
     border: 3px solid #FFB139;
@@ -69,7 +75,8 @@ body {
 }
 
 .btn-signup,
-.btn-edit {
+.btn-edit,
+.btn-book {
     background-color: #FFB139;
     color: #605E62;
     font-weight: bold;
@@ -82,7 +89,8 @@ body {
 }
 
 .btn-signup:hover,
-.btn-edit:hover {
+.btn-edit:hover,
+.btn-book:hover {
     text-decoration: none;
     background-color: #605E62;
     color: #FFB139;

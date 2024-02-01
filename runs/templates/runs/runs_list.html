@@ -2,6 +2,9 @@
 {% block content %}
 {% load static %}
 
+<div class="d-flex justify-content-center align-items-center">
+    <h1 class="title-text">Join the Tribe</h1>
+</div>
 <div class="container">
     <section class="col-12 mt-3">
         <div class="row">
@@ -9,8 +12,9 @@
             <div class="col-md-3">
                 <div class="card mb-2">
                     <div class="card-body">
-                        <h5 class="card-title">{{ run.title }}</h5>
-                        <p class="card-text">{{ run.excerpt }}</p>
+                        <h4 class="title-text">{{ run.title }}</h5>
+                        <p>{{ run.excerpt }}</p>
+                        <a href="{% url 'post_detail' run.slug %}" class="btn btn-book">Book</a>
                     </div>
                 </div>
             </div>

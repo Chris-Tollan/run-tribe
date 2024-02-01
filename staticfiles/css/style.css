@@ -39,6 +39,10 @@ body {
     font-weight: bold;
 }
 
+.footer i {
+    color: #FFB139;
+}
+
 .card {
     background-color: #605E6250;
     border: 3px solid #FFB139;

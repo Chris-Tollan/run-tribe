@@ -1,15 +1,9 @@
 from django.shortcuts import render
-from .models import About
+from django.views import generic
+from .models import Runs
 
 
-def run_list(request):
-    """
-    Renders the Runs page
-    """
-    runs = Runs.objects.all().order_by('-updated_on').first()
-
-    return render(
-        request,
-        "runs/runs.html",
-        {"runs": runs},
-    )
+class RunList(generic.ListView):
+    queryset = Runs.objects.filter(status=1)
+    template_name = "runs_list.html"
+    paginate_by = 6

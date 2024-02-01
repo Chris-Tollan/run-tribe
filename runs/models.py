@@ -10,6 +10,7 @@ class Runs(models.Model):
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     description = models.TextField()
+    excerpt = models.TextField(blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
     updated_on = models.DateTimeField(auto_now=True)
 

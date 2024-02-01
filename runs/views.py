@@ -11,5 +11,5 @@ def run_list(request):
     return render(
         request,
         "runs/runs.html",
-        {"runs": run},
+        {"runs": runs},
     )

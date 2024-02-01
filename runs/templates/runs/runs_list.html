@@ -1,5 +1,22 @@
-{% extends "base.html" %}
-
+{% extends "base.html" %} 
 {% block content %}
-<h1>runs</h1>
-{% endblock %}
+{% load static %}
+
+<div class="container">
+    <section class="col-12 mt-3">
+        <div class="row">
+            {% for run in runs_list %}
+            <div class="col-md-3">
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ run.title }}</h5>
+                        <p class="card-text">{{ run.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+
+{% endblock content %}

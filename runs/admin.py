@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Runs, Booking
+from .models import Runs
 from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
@@ -13,14 +13,3 @@ class RunsAdmin(SummernoteModelAdmin):
     list_filter = ('status', 'updated_on')
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('content',)
-
-
-@admin.register(Booking)
-class BookingAdmin(admin.ModelAdmin):
-    list_display = ('user', 'runz', 'approved')
-    list_filter = ('approved', 'runs')
-    search_fields = ('user__username', 'runs__title', 'approved')
-    actions = ['approve_bookings']
-
-    def approve_bookings(self, request, queryset):
-        queryset.update(approved=True)

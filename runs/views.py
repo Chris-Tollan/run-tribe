@@ -16,5 +16,5 @@ def book_run(request, slug):
     return render(
         request,
         "runs/book_run.html",
-        {"post": post},
+        {"run": run},
     )

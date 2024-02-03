@@ -1,4 +1,4 @@
-from .models import Bookin
+from .models import Booking
 from django import forms
 
 

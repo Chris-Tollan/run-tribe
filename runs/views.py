@@ -28,5 +28,6 @@ def book_run(request, slug):
     return render(
         request,
         "runs/book_run.html",
-        {"run": run},
+        {"run": run,
+         "booking_form": booking_form,},
     )

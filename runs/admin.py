@@ -15,12 +15,5 @@ class RunsAdmin(SummernoteModelAdmin):
     summernote_fields = ('content',)
 
 
-@admin.register(Booking)
-class BookingAdmin(admin.ModelAdmin):
-    list_display = ('user', 'runs', 'approved')
-    list_filter = ('approved', 'runs')
-    search_fields = ('user__username', 'runs__title', 'approved')
-    actions = ['approve_bookings']
+admin.site.register(Booking)
 
-    def approve_bookings(self, request, queryset):
-        queryset.update(approved=True)

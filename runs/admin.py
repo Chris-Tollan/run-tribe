@@ -13,3 +13,6 @@ class RunsAdmin(SummernoteModelAdmin):
     list_filter = ('status', 'updated_on')
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('content',)
+
+
+admin.site.register(Booking)

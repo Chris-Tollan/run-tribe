@@ -14,9 +14,9 @@ class RunInformation(View):
     def get(self, request, slug, *args, **kwargs):
         run_detail = get_object_or_404(Runs, slug=slug, status=1)
         available_runs = AvailableRuns.objects.filter(
-            runs=run_detail).order_by('updated_on')
+            runs=run_detail)
 
-        return render(request, 'book_run.html', {
+        return render(request, 'runs/book_run.html', {
             'run_detail': run_detail,
             'available_runs': available_runs
         })
@@ -39,7 +39,14 @@ class ReserveRun(View):
                 # Create a new booking/enquiry
                 booking = Booking.objects.create(
                     user=request.user, runs=available_runs, approved=False)
-                # Redirect to the 'my_bookings' page
+                # Redirect to the 'my_bookings' page, otherwise to the login
+                # page
                 return render(request, 'my_bookings.html', {
                     'pending': True
-                }
+                })
+            else:
+                return redirect('account_login')
+        except IntegrityError:
+            return render(request, 'my_bookings.html', {
+                'already_booked': True,
+            })

@@ -32,13 +32,13 @@
         {% if user.is_authenticated %}
         <h3>Book run:</h3>
         <p>Name of runner: {{ user.username }}</p>
+        <p> Run: {{ run.title }}</p>
         <form method="post" style="margin-top: 1.3em;">
-            {{ booking_form | crispy }}
             {% csrf_token %}
             <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Book</button>
         </form>
         {% else %}
-        <p>Please log in to comment</p>
+        <p>Please log in to Book</p>
         {% endif %}
     </div>
 </div>

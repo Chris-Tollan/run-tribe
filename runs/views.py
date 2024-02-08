@@ -20,3 +20,26 @@ class RunInformation(View):
             'run_detail': run_detail,
             'available_runs': available_runs
         })
+
+
+class ReserveRun(View):
+    def get(self, request, available_runs_id):
+        available_runs = get_object_or_404(AvailableRuns, id=available_runs_id)
+        context = {
+            'available_runs': available_runs
+        }
+
+        return render(request, 'book_run.html', context)
+
+    def post(self, request, available_runs_id):
+        available_runs = get_object_or_404(AvailableRuns, id=available_runs_id)
+        try:
+            # Check if the user is authenticated
+            if request.user.is_authenticated:
+                # Create a new booking/enquiry
+                booking = Booking.objects.create(
+                    user=request.user, runs=available_runs, approved=False)
+                # Redirect to the 'my_bookings' page
+                return render(request, 'my_bookings.html', {
+                    'pending': True
+                })

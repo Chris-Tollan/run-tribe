@@ -20,27 +20,3 @@ class Runs(models.Model):
 
     def __str__(self):
         return f"Run - {self.title}"
-
-
-class AvailableRuns(models.Model):
-    runs = models.ForeignKey(
-        Runs, on_delete=models.CASCADE, related_name='available_runs')
-
-    class Meta:
-        verbose_name_plural = 'AvailableRuns'        
-
-    def __str__(self):
-        return (
-            f'{self.runs} is reserved'
-        )
-
-
-class Booking(models.Model):
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE,
-                             related_name='user_booking')
-    runs = models.ForeignKey(AvailableRuns, on_delete=models.CASCADE,
-                             related_name='runs_booking',)
-    approved = models.BooleanField(default=False)
-
-    def __str__(self):
-        return f'{self.runs} is booked by {self.user}'

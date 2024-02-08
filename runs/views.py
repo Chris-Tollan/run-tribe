@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
-from .models import Runs
+from .models import Runs, AvailableRuns, Booking
 from django.contrib import messages
 
 
@@ -42,4 +42,4 @@ class ReserveRun(View):
                 # Redirect to the 'my_bookings' page
                 return render(request, 'my_bookings.html', {
                     'pending': True
-                })
+                }

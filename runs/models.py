@@ -23,7 +23,7 @@ class Runs(models.Model):
 
 
 class Booking(models.Model):
-    runs = models.ForeignKey(
+    title = models.ForeignKey(
         Runs, on_delete=models.CASCADE, related_name='run_booking',)
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user_booking")
@@ -34,4 +34,4 @@ class Booking(models.Model):
         ordering = ["created_on"]
 
     def __str__(self):
-        return f'{self.runs} is booked by {self.user}'
+        return f'{self.title} is booked by {self.user}'

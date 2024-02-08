@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Runs
+from .models import Runs, Booking
 from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.

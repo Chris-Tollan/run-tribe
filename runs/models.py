@@ -20,3 +20,16 @@ class Runs(models.Model):
 
     def __str__(self):
         return f"Run - {self.title}"
+
+
+class AvailableRuns(models.Model):
+    runs = models.ForeignKey(
+        Runs, on_delete=models.CASCADE, related_name='available_runs')
+
+    class Meta:
+        verbose_name_plural = 'AvailableRuns'        
+
+    def __str__(self):
+        return (
+            f'{self.runs} is reserved'
+        )

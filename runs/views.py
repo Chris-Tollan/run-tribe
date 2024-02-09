@@ -1,9 +1,15 @@
 from django.shortcuts import render, get_object_or_404, reverse
-from django.views import generic
+from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Runs, Booking
 from .forms import BookingForm
 from django.contrib import messages
+
+
+class RunList(generic.ListView):
+    queryset = Runs.objects.filter(status=1)
+    template_name = "runs/runs.html"
+    paginate_by = 8
 
 
 class RunDetail(View):

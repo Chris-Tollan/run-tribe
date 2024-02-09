@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.http import HttpResponseRedirect
 from .models import Runs, Booking
-from .forms import CommentForm
+from .forms import BookingForm
 from django.contrib import messages
 
 
@@ -10,7 +10,7 @@ class RunDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
 
-    	# render the run and the booking form
+        # render the run and the booking form
         queryset = Runs.objects.all()
         run = get_object_or_404(queryset, slug=slug)
 
@@ -25,7 +25,7 @@ class RunDetail(View):
 
     def post(self, request, slug, *args, **kwargs):
 
-    	# if the method is POST, collect the data
+        # if the method is POST, collect the data
         queryset = Runs.objects.all()
         run = get_object_or_404(queryset, slug=slug)
 

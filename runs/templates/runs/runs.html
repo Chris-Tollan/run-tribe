@@ -15,7 +15,7 @@
                             <div class="card-body">
                                 <h4>{{ run.title }}</h4>
                                 <p>{{ run.excerpt }}</p>
-                                <a href="#"
+                                <a href="{% url 'run_detail' run.slug %}"
                                     class="btn btn-book">More Information</a>
                             </div>
                         </div>

@@ -20,3 +20,18 @@ class Runs(models.Model):
 
     def __str__(self):
         return f"Run - {self.title}"
+
+
+class Booking(models.Model):
+    title = models.ForeignKey(
+        Runs, on_delete=models.CASCADE, related_name='run_booking')
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='user_booking')
+    approved = models.BooleanField(default=False)
+    available_date = models.DateTimeField()
+
+    class Meta:
+        ordering = ['available_date']
+
+    def __str__(self):
+        return f'{self.title} is booked by {self.user}'

@@ -44,8 +44,15 @@ class RunDetail(View):
             booking = booking_form.save(commit=False)
             # assign the booking title to the current run
             booking_form.instance.title = run
-            # save the form
+            # save the form and display success message
             booking_form.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Your booking is awaiting approval, book more runs below or '
+                'view your booking in the My Bookings page'
+            )
+
+        booking_form = BookingForm()
             # redirect the user
         return render(
             request,

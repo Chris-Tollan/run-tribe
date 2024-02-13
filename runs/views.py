@@ -53,7 +53,7 @@ class RunDetail(View):
             )
 
         booking_form = BookingForm()
-            # redirect the user
+        # redirect the user
         return render(
             request,
             "runs/book_run.html",

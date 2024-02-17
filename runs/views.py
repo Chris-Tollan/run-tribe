@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 from .models import Runs, Booking
 from .forms import BookingForm
 from django.contrib import messages
-from django.views.generic.edit import DeleteView
+from django.views.generic.edit import DeleteView, UpdateView
 
 
 class RunList(generic.ListView):
@@ -86,3 +86,20 @@ class BookingDeleteView(DeleteView):
     success_url ="/"
      
     template_name = "runs/booking_confirm_delete.html"
+
+
+class BookingUpdateView(UpdateView): 
+    # specify the model you want to use 
+    model = Booking
+  
+    # specify the fields 
+    fields = [ 
+        "phone", 
+    ] 
+  
+    # can specify success url 
+    # url to redirect after successfully 
+    # updating details 
+    success_url ="/"
+
+    template_name = "runs/booking_update.html"

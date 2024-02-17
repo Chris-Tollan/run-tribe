@@ -17,7 +17,7 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <h2>Join the Tribe</h2>
+        <h2>Lace up your shoes, you've got running to do</h2>
 
         <div class="container">
             <section class="col-12 mt-3">
@@ -27,6 +27,7 @@
                         <div class="card mb-2">
                             <div class="card-body">
                                 <h4>{{ booking.title }}</h4>
+                                <a href="{% url 'update_booking' booking.id %}" class="btn btn-edit mb-4 mt-4">Update Booking</a>
                                 <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger mb-4 mt-4">Delete Booking</a>
                             </div>
                         </div>

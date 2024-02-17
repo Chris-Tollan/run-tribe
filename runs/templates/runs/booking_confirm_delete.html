@@ -21,17 +21,11 @@
 
         <div class="container">
             <section class="col-12 mt-3">
-                <div class="row card-deck">
-                    {% for booking in user_bookings %}
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <h4>{{ booking.title }}</h4>
-                                <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger mb-4 mt-4">Delete Booking</a>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
+                <div class="row card-deck">                       
+                    <form method="post">{% csrf_token %}
+                    <p>Are you sure you want to delete "{{ booking.title }}"?</p>    
+                        <input type="submit" value="Confirm">
+                    </form>
                 </div>
             </section>
         </div>

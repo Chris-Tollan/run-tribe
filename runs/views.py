@@ -1,9 +1,10 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Runs, Booking
 from .forms import BookingForm
 from django.contrib import messages
+from django.views.generic.edit import DeleteView
 
 
 class RunList(generic.ListView):
@@ -73,3 +74,15 @@ class MyBookings(generic.ListView):
                 'user_bookings': user_bookings,
                 'approved': True,
             })
+
+
+class BookingDeleteView(DeleteView):
+    # specify the model you want to use
+    model = Booking
+     
+    # can specify success url
+    # url to redirect after successfully
+    # deleting object
+    success_url ="/"
+     
+    template_name = "runs/booking_confirm_delete.html"

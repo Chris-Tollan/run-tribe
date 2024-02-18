@@ -1,3 +1,9 @@
 from django.contrib import admin
+from .models import UserUpdate
+from django_summernote.admin import SummernoteModelAdmin
 
-# Register your models here.
+@admin.register(UserUpdate)
+class UserUpdateAdmin(admin.ModelAdmin):
+
+    list_display = ('message', 'read',)
+

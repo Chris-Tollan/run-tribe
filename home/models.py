@@ -11,3 +11,12 @@ class ContactUs(models.Model):
 
     def __str__(self):
         return f"{self.name} has got in touch!"
+
+
+class UserUpdate(models.Model):
+    email = models.CharField()
+    message = models.TextField()
+    read = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"{self.name} would like to make these changes to their account"

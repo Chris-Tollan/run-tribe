@@ -89,18 +89,11 @@ class BookingDeleteView(SuccessMessageMixin, DeleteView):
         return super(BookingDeleteView, self).delete(request, *args, **kwargs)
 
 
-class BookingUpdateView(UpdateView): 
-    # specify the model you want to use 
+class BookingUpdateView(SuccessMessageMixin, UpdateView): 
     model = Booking
-  
-    # specify the fields 
+    template_name = "runs/booking_update.html"
+    success_url ="/"
+    success_message = "Your contact details have been updated, thanks."
     fields = [ 
         "phone", 
     ] 
-  
-    # can specify success url 
-    # url to redirect after successfully 
-    # updating details 
-    success_url ="/"
-
-    template_name = "runs/booking_update.html"

@@ -121,7 +121,9 @@
                     aria-label="Visit our YouTube page (opens in a new tab)"><i
                         class="fab fa-youtube-square ms-3"></i></a>
             </p>
+            {% if user.is_authenticated %}
             <p class="m-0 text-center"><a href="{% url 'user_profile' %}">Update your profile heres</a></p>
+            {% endif %}
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"

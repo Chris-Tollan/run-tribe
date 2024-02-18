@@ -10,4 +10,4 @@ class UserUpdate(models.Model):
     read = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"{self.name} would like to make these changes to their account"
+        return f"{self.user} would like to make these changes to their account"

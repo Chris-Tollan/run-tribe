@@ -8,6 +8,7 @@ def update_user_details(request):
     if request.method == "POST":
         user_update = UserUpdate(data=request.POST)
         if user_update.is_valid():
+            user_update.instance.user = request.user
             user_update.save()
             messages.add_message(
                 request, messages.SUCCESS,

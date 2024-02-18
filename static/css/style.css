@@ -43,6 +43,11 @@ body {
     color: #FFB139;
 }
 
+.footer a {
+    color: #FFB139;
+    text-decoration: none;
+}
+
 .title-text {
     font-family: "Bebas Neue";
     font-weight: bold;

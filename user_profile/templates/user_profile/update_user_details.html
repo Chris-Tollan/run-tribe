@@ -30,6 +30,11 @@
             <div class="col-12 col-md-6 my-5">
                 <h2>update</h2>
                 <p>update</p>
+                <form method="post">
+                    {{ user_update | crispy }}
+                    {% csrf_token %}
+                    <button class="btn btn-signup" type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </div>

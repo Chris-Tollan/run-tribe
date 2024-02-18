@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib import messages
+from .forms import UserUpdate
 
 
 def update_user_details(request):
@@ -17,7 +18,7 @@ def update_user_details(request):
     """ User Update Page """
     return render(
         request,
-        "home/update_user_details.html",
+        "user_profile/update_user_details.html",
         {"update_user_details": update_user_details,
          "user_update": user_update},
     )

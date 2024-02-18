@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.contrib import messages
-from .forms import ContactUs, UserUpdate
+from .forms import ContactUs
 
 # Create your views here.
 

@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect
 from .models import Runs, Booking
 from .forms import BookingForm
 from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import DeleteView, UpdateView
 
 
@@ -49,7 +50,8 @@ class RunDetail(View):
             booking_form.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                'Your booking is awaiting approval, book more runs below or '
+                'Your booking is awaiting approval.'
+                'Book more runs at the runs page or '
                 'view your booking in the My Bookings page'
             )
 
@@ -76,16 +78,15 @@ class MyBookings(generic.ListView):
             })
 
 
-class BookingDeleteView(DeleteView):
-    # specify the model you want to use
+class BookingDeleteView(SuccessMessageMixin, DeleteView):
     model = Booking
-     
-    # can specify success url
-    # url to redirect after successfully
-    # deleting object
-    success_url ="/"
-     
     template_name = "runs/booking_confirm_delete.html"
+    success_url ="/"
+    success_message = "You have successfully been removed from this run."
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(BookingDeleteView, self).delete(request, *args, **kwargs)
 
 
 class BookingUpdateView(UpdateView): 

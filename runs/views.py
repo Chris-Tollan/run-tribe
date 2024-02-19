@@ -70,8 +70,7 @@ class RunDetail(View):
 class MyBookings(generic.ListView):
     def get(self, request):
         """ My Bookings page """
-        user_bookings = Booking.objects.filter(user=request.user,
-                                               approved=True)
+        user_bookings = Booking.objects.filter(user=request.user)
         return render(request, 'runs/my_bookings.html', {
                 'user_bookings': user_bookings,
                 'approved': True,

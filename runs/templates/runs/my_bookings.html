@@ -26,6 +26,15 @@
                     <div class="col-md-3">
                         <div class="card mb-2">
                             <div class="card-body">
+                                {% if not booking.approved and booking.user == user %}
+                                <p class="approval">
+                                    This booking is with admin for approval...
+                                </p>
+                                {% elif booking.approved and booking.user == user %}
+                                <p class="approval">
+                                    This booking has been confirmed <i class="fas fa-running"></i>
+                                </p>
+                                {% endif %}
                                 <h4>{{ booking.title }}</h4>
                                 <a href="{% url 'update_booking' booking.id %}" class="btn btn-edit mb-4 mt-4">Update Booking</a>
                                 <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger mb-4 mt-4">Delete Booking</a>

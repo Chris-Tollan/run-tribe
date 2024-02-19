@@ -75,8 +75,15 @@ body {
 }
 
 .link {
-    color: #FFB139;
+    font-family: "Bebas Neue";
+    color: #f39304;
     font-weight: bold;
+    text-decoration: underline;
+}
+
+.link:hover {
+    font-size: larger;
+    color: #FFB139;
 }
 
 .btn-signup,
@@ -99,10 +106,6 @@ body {
     text-decoration: none;
     background-color: #605E62;
     color: #FFB139;
-}
-
-.booking.fade {
-    opacity: 0.5;
 }
 
 @media screen and (max-width: 800px) {

@@ -27,7 +27,6 @@
                         <div class="card mb-2">
                             <div class="card-body">
                                 <h4>{{ booking.title }}</h4>
-                                <p>{{ run.excerpt }}</p>
                                 <a href="{% url 'update_booking' booking.id %}" class="btn btn-edit mb-4 mt-4">Update Booking</a>
                                 <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger mb-4 mt-4">Delete Booking</a>
                             </div>

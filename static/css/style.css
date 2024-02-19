@@ -101,6 +101,10 @@ body {
     color: #FFB139;
 }
 
+.booking.fade {
+    opacity: 0.5;
+}
+
 @media screen and (max-width: 800px) {
 
     .hero-image {

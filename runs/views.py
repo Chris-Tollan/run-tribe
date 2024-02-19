@@ -59,7 +59,7 @@ class RunDetail(View):
         # redirect the user
         return render(
             request,
-            "runs/my_bookings.html",
+            "runs/book_run.html",
             {
                 "run": run,
                 "booking_form": booking_form

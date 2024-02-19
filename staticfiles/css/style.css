@@ -75,8 +75,15 @@ body {
 }
 
 .link {
-    color: #FFB139;
+    font-family: "Bebas Neue";
+    color: #f39304;
     font-weight: bold;
+    text-decoration: underline;
+}
+
+.link:hover {
+    font-size: larger;
+    color: #FFB139;
 }
 
 .btn-signup,

@@ -9,10 +9,10 @@ from django_summernote.admin import SummernoteModelAdmin
 class RunsAdmin(SummernoteModelAdmin):
 
     list_display = ('title', 'slug', 'status', 'updated_on')
-    search_fields = ['title', 'content']
+    search_fields = ['title', 'description']
     list_filter = ('status', 'updated_on')
     prepopulated_fields = {'slug': ('title',)}
-    summernote_fields = ('content',)
+    summernote_fields = ('description', 'excerpt',)
 
 
 admin.site.register(Booking)

@@ -29,23 +29,34 @@
   <div class="row">
     <div class="col card mb-4 mt-3 left top">
       <div class="card-body">
+        <div class="image-container">
+          {% if "placeholder" in run.featured_image.url %}
+          <img class="card-img-top" src="{% static 'images/default_runs_image.webp' %}" alt="placeholder image">
+          {% else %}
+          <img class="card-img-top" src=" {{ run.featured_image.url }}" alt="{{ run.title }}">
+          {% endif %}
+      </div>
         <h2>{{ run.title | safe }}</h2>
-        <p class="card-text">{{ run.description | safe}}</p>
+        <p class="card-text">{{ run.description | safe }}</p>
       </div>
     </div>
   </div>
 </div>
-<div class="col-md-4 card mb-4 mt-3">
-  <div class="card-body">
-    <h3>Book run:</h3>
-    <p>Add {{ user.username }} to this run group.</p>
-    <p> Please enter a contact number below incase the run organiser needs to get in touch.</p>
-    <form method="post" style="margin-top: 1.3em">
-      {{ booking_form | crispy }} {% csrf_token %}
-      <button id="submitButton" type="submit" class="btn btn-signup btn-lg">
-        Book
-      </button>
-    </form>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4 card mb-4 mt-3 mx-auto">
+      <div class="card-body">
+        <h3>Book run:</h3>
+        <p>Add {{ user.username }} to this run group.</p>
+        <p> Please enter a contact number below incase the run organiser needs to get in touch.</p>
+        <form method="post" style="margin-top: 1.3em">
+          {{ booking_form | crispy }} {% csrf_token %}
+          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">
+            Book
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
 

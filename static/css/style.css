@@ -111,6 +111,17 @@ body {
 .approval {
     color: #605E62;
     font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #f39304;
+}
+
+.approval_icon {
+    color: #f39304
+}
+
+.pending {
+    color: #605E62;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {

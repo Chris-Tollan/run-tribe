@@ -1,11 +1,11 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Runs, Booking
-from .forms import BookingForm
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import DeleteView, UpdateView
+from .models import Runs, Booking
+from .forms import BookingForm
 
 
 class RunList(generic.ListView):
@@ -80,7 +80,7 @@ class MyBookings(generic.ListView):
 class BookingDeleteView(SuccessMessageMixin, DeleteView):
     model = Booking
     template_name = "runs/booking_confirm_delete.html"
-    success_url ="/"
+    success_url = "/"
     success_message = "You have successfully been removed from this run."
 
     def delete(self, request, *args, **kwargs):
@@ -88,11 +88,11 @@ class BookingDeleteView(SuccessMessageMixin, DeleteView):
         return super(BookingDeleteView, self).delete(request, *args, **kwargs)
 
 
-class BookingUpdateView(SuccessMessageMixin, UpdateView): 
+class BookingUpdateView(SuccessMessageMixin, UpdateView):
     model = Booking
     template_name = "runs/booking_update.html"
-    success_url ="/"
+    success_url = "/"
     success_message = "Your contact details have been updated, thanks."
-    fields = [ 
-        "phone", 
-    ] 
+    fields = [
+        "phone",
+    ]

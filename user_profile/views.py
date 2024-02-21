@@ -12,7 +12,7 @@ def update_user_details(request):
             user_update.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                'Thanks, we will contact you on the email address provided within 24 hours.'
+                'We will confirm your update via email within 24 hours'
             )
 
     user_update = UserUpdate()
@@ -23,4 +23,3 @@ def update_user_details(request):
         {"update_user_details": update_user_details,
          "user_update": user_update},
     )
-

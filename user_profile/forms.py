@@ -1,5 +1,5 @@
-from .models import UserUpdate
 from django import forms
+from .models import UserUpdate
 
 
 class UserUpdate(forms.ModelForm):

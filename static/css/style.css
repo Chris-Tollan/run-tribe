@@ -97,7 +97,7 @@ body {
 .btn-delete {
     background-color: red;
     color: #EFEFF0;
-    font-weight: white;
+    font-weight: bold;
 }
 
 .btn-signup:hover,

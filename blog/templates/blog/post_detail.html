@@ -83,7 +83,10 @@
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
                 {% else %}
-                <p>Please log in to comment</p>
+                <p>If you are already a member of the tribe then please <a class="link" href="{{ login_url }}">sign
+                    in</a> to comment on this post</p>
+                <p>If you haven't created an account yet then <a class="link" href="{{ signup_url }}">sign up</a>
+                  first.</p>
                 {% endif %}
             </div>
         </div>

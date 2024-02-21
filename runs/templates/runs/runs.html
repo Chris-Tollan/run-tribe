@@ -1,5 +1,5 @@
-{% extends "base.html" %} 
-{% block content %} 
+{% extends "base.html" %}
+{% block content %}
 {% load static %}
 
 <!-- runs.html content starts here -->
@@ -14,15 +14,13 @@
             <div class="card mb-2">
               <div class="card-body">
                 <h4 class="title-text">{{ run.title | safe }}</h4>
-                <p class="text-start">{{ run.excerpt | safe }}</p>
+                <article class="text-center">{{ run.excerpt | safe }}</article>
                 {% if user.is_authenticated %}
-                <a href="{% url 'run_detail' run.slug %}" class="btn btn-book"
-                  >More Information</a
-                >
+                <a href="{% url 'run_detail' run.slug %}" class="btn btn-book">More Information</a>
                 {% else %}
-                <p>If you are already a member of the tribe then please <a
-                    class="link" href="{{ login_url }}">sign in</a> to book a space with this running group</p>
-                <p>If you haven't created  an account yet then <a class="link" href="{{ signup_url }}">sign up</a>
+                <p>If you are already a member of the tribe then please <a class="link" href="{{ login_url }}">sign
+                    in</a> to book a space with this running group</p>
+                <p>If you haven't created an account yet then <a class="link" href="{{ signup_url }}">sign up</a>
                   first.</p>
                 {% endif %}
               </div>
@@ -38,15 +36,12 @@
     <ul class="pagination justify-content-center">
       {% if page_obj.has_previous %}
       <li>
-        <a href="?page={{ page_obj.previous_page_number }}" class="page-link"
-          >&laquo; PREV</a
-        >
+        <a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV</a>
       </li>
       {% endif %} {% if page_obj.has_next %}
       <li>
         <a href="?page={{ page_obj.next_page_number }}" class="page-link">
-          NEXT &raquo;</a
-        >
+          NEXT &raquo;</a>
       </li>
       {% endif %}
     </ul>

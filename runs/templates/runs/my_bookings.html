@@ -20,7 +20,7 @@
         <h2>Lace up your shoes, you've got running to do</h2>
 
         <div class="container">
-            <section class="col-12 mt-3">
+            <div class="col-12 mt-3">
                 <div class="row card-deck">
                     {% for booking in user_bookings %}
                     <div class="col-md-3">
@@ -36,14 +36,16 @@
                                 </p>
                                 {% endif %}
                                 <h4>{{ booking.title }}</h4>
-                                <a href="{% url 'update_booking' booking.id %}" class="btn btn-edit mb-4 mt-4">Update Booking</a>
-                                <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger mb-4 mt-4">Delete Booking</a>
+                                <a href="{% url 'update_booking' booking.id %}" class="btn btn-edit mb-4 mt-4">Update
+                                    Booking</a>
+                                <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger mb-4 mt-4">Delete
+                                    Booking</a>
                             </div>
                         </div>
                     </div>
                     {% endfor %}
                 </div>
-            </section>
+            </div>
         </div>
     </div>
 </div>

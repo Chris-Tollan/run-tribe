@@ -1,5 +1,5 @@
-from .models import ContactUs
 from django import forms
+from .models import ContactUs
 
 
 class ContactUs(forms.ModelForm):

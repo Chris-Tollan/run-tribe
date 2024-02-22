@@ -75,12 +75,25 @@ Whether you're seeking new challenges, training partners, or simply looking to i
     -   ![RunTribeDesktopWireframe](https://github.com/Chris-Tollan/run-tribe/assets/134441833/d6d5bc8d-94f7-4cc5-9914-36be4945f391)
 
 -   ### Entity Relationship Diagrams
-  
+    -   Entity Relationship Diagrams were created for each model as shown below
+      
     -  #### Booking ERD
-    -   ![LucidChartERDforBooking](https://github.com/Chris-Tollan/run-tribe/assets/134441833/89285125-e7ce-4e71-b038-c353eb1d4534)
+    -   ![booking_erd](https://github.com/Chris-Tollan/run-tribe/assets/134441833/f1c61436-2cb2-4725-b639-be7b6028f2e5)
+
 
     -  #### Post and Comment ERD 
-    -   ![LucidChartERDforPost](https://github.com/Chris-Tollan/run-tribe/assets/134441833/77f2c0d6-a570-46a9-85ef-c38b92caf146)
+    -   ![post_comment_user_erd](https://github.com/Chris-Tollan/run-tribe/assets/134441833/dc774b1e-d571-45a5-8eb5-eb4970d10463)
+      
+ 
+    -  #### User Update ERD
+    -  ![user_update_erd](https://github.com/Chris-Tollan/run-tribe/assets/134441833/17f57b91-dfdc-4af5-aaf4-82f46fe1fa62)
+ 
+
+    - #### Contact Us ERD
+    - ![contact_us_erd](https://github.com/Chris-Tollan/run-tribe/assets/134441833/00c890c6-3641-4546-ab1c-88afc3c13a05)
+
+
+
 
 ## Features
 -   ### Design implementation

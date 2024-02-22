@@ -83,30 +83,90 @@ Whether you're seeking new challenges, training partners, or simply looking to i
     -   ![LucidChartERDforPost](https://github.com/Chris-Tollan/run-tribe/assets/134441833/77f2c0d6-a570-46a9-85ef-c38b92caf146)
 
 ## Features
+-   ### NavBar
+    -  The NavBar is always located at the top of the page. It is simple and easy to navigate. Logged in users will have full access to the site whereas user who aren't logged in will only have access to limited features. On smaller devices the menu options will collapse into a burger icon.
+    -  Collapsed navbar on smaller devices
+       ![navbar_collapsed](https://github.com/Chris-Tollan/run-tribe/assets/134441833/f755cbad-07b2-4110-95fa-70335fd13b9f)
+       
+    -  Navbar opened on smaller devices
+       ![navbar_extended_smaller_devices](https://github.com/Chris-Tollan/run-tribe/assets/134441833/a2783699-9865-42f3-b6f9-030edea92718)
+       
+    -  Navbar when logged in
+       ![navbar_logged_in](https://github.com/Chris-Tollan/run-tribe/assets/134441833/f31e9f5b-ed71-4d61-9555-f2993a646bfa)
+       
+    -  Navbar when logged out
+       ![navbar_logged_out](https://github.com/Chris-Tollan/run-tribe/assets/134441833/55003b69-a57c-4ce2-85d0-367fe714bf0b)
+
 
 -   ### Home Page
-    -  The homepage will feature a navbar at the top of the screen containing a Logo to the left and menu options to the right. On smaller screens the menu options will collapse into a clickable "burger" menu and on larger screens the menu options will display in a horrizontal list within the navbar. A hero image with a message welcoming the user to the site followed by a brief about us section and a contact us form will then follow. Fixed  at the bottom of the screen will be the footer which will contain social media links.
+    -  The homepage will feature a navbar at the top of the screen. A hero image with a message welcoming the user to the site followed by a brief about us section and a contact us form will then follow. Fixed  at the bottom of the screen will be the footer which will contain social media links. When the contact form is completed the page is refreshed with a success message at the top. A message is also displayed informing the user if they are logged in and if so then what username they are logged in as.
+    -  ![homepage_content](https://github.com/Chris-Tollan/run-tribe/assets/134441833/2a7997cc-2358-44eb-8b61-19ebd71ea5ee)
+
  
 -   ### Runs
-    -  The Runs page will contain details about an upcoming group run. Logged in users will be able to select a run to book a place. If a user who is not logged in attempts to select a displayed run they will be asked to sign in/register.
+    -  The Runs page will contain details about an upcoming group run. Logged in users will be able to select a run to view more information about and book a place. If a user who is not logged in attempts to select a displayed run they will be asked to sign in/register.
+    -  Runs page when logged out
+       ![runs_page_logged_out](https://github.com/Chris-Tollan/run-tribe/assets/134441833/5a2b7af6-9a22-4bfc-ac87-fb38b6ceea6f)
+       
+    -  Runs page when logged in
+       ![runs_page_logged_in](https://github.com/Chris-Tollan/run-tribe/assets/134441833/2833b373-db20-44fe-a536-3e6c8716bcb5)
+       
+    -  Run details and booking form which is only availble to logged in users. When the form is submitted the page is refreshed and a success message displayed.
+       ![run_detail_booking_form](https://github.com/Chris-Tollan/run-tribe/assets/134441833/6e0942b9-5903-4866-b857-a0e2229fcd11)
+
  
 -   ### My Bookings
-    - The my bookings page can only be accessed by a logged in user. This will display a list of all the runs the user has booked and provide them with an option to update/cancel. If cancelling the user will be asked to confirm they wish to cancel.
+    - The my bookings page can only be accessed by a logged in user. This will display a list of all the runs the user has booked and provide them with an option to update/cancel. If cancelling the user will be asked to confirm they wish to cancel. A message is contained on each booking confirming if it has been approved or if it is pending.
+    -  ![my_bookings_page](https://github.com/Chris-Tollan/run-tribe/assets/134441833/44b95859-6a39-4f47-8546-6cfef54c630d)
+      
+    -   Updating a booking
+        ![update_booking](https://github.com/Chris-Tollan/run-tribe/assets/134441833/d66937b8-2096-4512-96a6-d5a4e30dd80f)
+        
+    -  Cancelling a booking
+       ![confirm_delete_booking](https://github.com/Chris-Tollan/run-tribe/assets/134441833/0c3955cd-aa1a-40b3-ac72-85783ec66131)
+       
+    -   When a booking is updated or deleted the user is returned to the homepage where a success message will be displayed in relation to the action taken. 
+
  
 -   ### Posts
     - Within the posts page a list of the title, author and date posted of approved posts will be displayed. If clicked the post in its entirety will be displayed as well as any approved comments made by users. Loggied in users will have the option to comment on posts as well as to edit and delete their comments.
+    -   ![blog_page](https://github.com/Chris-Tollan/run-tribe/assets/134441833/c7953a54-c0a9-4548-b3a7-32cec66d3a4a)
+      
+    -   Viewing a blog post and comment section when logged out
+        ![blog_post_and_comment_logged_out](https://github.com/Chris-Tollan/run-tribe/assets/134441833/7234a0df-d615-495d-af92-c12f43591aa7)
+        
+    -   Viewing a blog post and comment section when logged in. When the user comments a success message is displayed confirming the comment is awaiting approval. The user can edit or delete any comment they have submitted.
+        ![blog_post_and_comment_logged_in](https://github.com/Chris-Tollan/run-tribe/assets/134441833/d63ac788-c0cc-408c-b581-403a2908cc2e)
+
 
 -   ### Update Details
-    - This page will contain instructions for the user to uodate/delete their account and a form for them to submit in respect of this.
+    - This page will contain instructions for the user to uodate/delete their account and a form for them to submit in respect of this.  
+    -   ![user_update_page](https://github.com/Chris-Tollan/run-tribe/assets/134441833/fe988f00-da34-4cc7-9eb7-d5bb979450c2)
+ 
+
+-   ### Footer
+    - The footer contains details of the developer and links to social media. Logged in users will also have the option here to navigate to the the page to update their details.
+    - Logged out user
+     ![footer_logged_out](https://github.com/Chris-Tollan/run-tribe/assets/134441833/836b0ef2-63e8-45c4-b7cd-c8ec8c87f017)
+
+    - Logged in user
+    ![footer_logged_in](https://github.com/Chris-Tollan/run-tribe/assets/134441833/e20526ce-bb1f-41ef-8e74-8d51db59aa3d)
+
  
 -   ### Register
     - This can be accessed via the navbar and users will have the option to create an account. Users will be asked to created a username, add their email address, enter and re-enter a password in order to sign up.
+    -   ![signup_page](https://github.com/Chris-Tollan/run-tribe/assets/134441833/e84d28cc-12bc-492f-a173-fd767375b4b0)
+
  
 - ### Login
     - This is where users can enter their username and password in order to login to their account. There will be a "Remember Me" checkbox here that the user can select to remain logged in.
+    -   ![login_page](https://github.com/Chris-Tollan/run-tribe/assets/134441833/5b31f93d-9c2e-4c3a-afed-604efef4f8de)
+
  
 - ### Logout
     - The logout option can be selected from the navbar. The logout screen will ask the user if they are sure they want to log out before then logging them out.
+    -   ![sign_out_page](https://github.com/Chris-Tollan/run-tribe/assets/134441833/212ae740-f6aa-40da-b6b0-15bf842ba3db)
+
 
 ## Agile Methodology
 

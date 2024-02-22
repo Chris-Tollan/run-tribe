@@ -163,13 +163,12 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 
 
 ### Known Bugs
-
-During development a number of small issues were encountered and overcome :-
+-   During development a number of small issues were encountered and overcome
     -    During the implemention of the booking form the when the user would submit the form to book a place on a run the booking would fail due to the booking title not being automatically included in the form. By running the Python Debugger [Python Debugger](https://docs.python.org/3/library/pdb.html) within the terminal I was able to see that the form was looking for booking.instance.title instead of booking.title that I was originally trying to submit with the form which when corrected as shown below resolved the issue
     
-![booking_form_bug](https://github.com/Chris-Tollan/run-tribe/assets/134441833/006e0707-95fa-4b57-9692-6e2bee00a38a)
+    ![booking_form_bug](https://github.com/Chris-Tollan/run-tribe/assets/134441833/006e0707-95fa-4b57-9692-6e2bee00a38a)
 
-    The debugger is used by inluding 'import pdb; pdb.set_trace()' within the code being tested. This then breaks the code form the line inserted and allowed me to command the debugger from the terminal.
+    -    The debugger is used by including 'import pdb; pdb.set_trace()' within the code being tested. This then breaks the code form the line inserted and allowed me to command the debugger from the terminal.
 
     -    Another issue which arose when updated my models was that tit caused conflicting information in the database. To fix this I followed the following steps to reset the database
         -    Delete all your migration files that start with numbers (don't delete the __init__.py)
@@ -181,15 +180,13 @@ During development a number of small issues were encountered and overcome :-
 ## Deployment
 
 ## Future Development
-
-The future development of this project will include:-
-    - User profile section to further enhance the feeling of the website being an online community for local runners to interact.
-    - The ability for selected users to have 'moderator' permissions allowing them to assist in the maintenance of selected aspects of the site.
-    - The ability to leave comments on runs so that other users can read feedback and user experiences about the different running groups.
+-   The future development of this project will include:-
+    -    User profile section to further enhance the feeling of the website being an online community for local runners to interact.
+    -    The ability for selected users to have 'moderator' permissions allowing them to assist in the maintenance of selected aspects of the site.
+    -    The ability to leave comments on runs so that other users can read feedback and user experiences about the different running groups.
 
 ## Credits/Acknowleldgements/Code
-
-I obtained code directly from the following which was either implemented more or less the same of used and then adapted for the purpose of meeting the needs of this project:-
+-   I obtained code directly from the following which was either implemented more or less the same of used and then adapted for the purpose of meeting the needs of this project:-
     -    For the initial set up of this project and then the creation the blog and comments section I followed the steps of the Code Institure 'I think therefore I blog' walkthrough project. Boilerplate code, NavBar and footer code was then adapted from the walkthrough project to meet the design aspect of this project
     -    When creating the views for Updating and Deleting Bookings I found the following guidance which I used and adapted to meet the need of this project [www.geeksforgeeks.org/deleteview-class-based-views-django](https://www.geeksforgeeks.org/deleteview-class-based-views-django/) and [www.geeksforgeeks.org/updateview-class-based-views-django](https://www.geeksforgeeks.org/updateview-class-based-views-django/)
 

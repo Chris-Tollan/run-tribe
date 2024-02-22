@@ -1,6 +1,7 @@
-<h1 align="center">RunTribe</h1>
+<h1 align="center"><img src="https://github.com/Chris-Tollan/run-tribe/assets/134441833/2770b9e4-0141-4860-8bf0-7e83d8edeb86"/></h1>
 
-[Link to the live project](https://run-tribe-cd76c944e137.herokuapp.com/)
+
+[Click this link to access the deployed RunTribe website...](https://run-tribe-cd76c944e137.herokuapp.com/)
 
 ## Introduction
 

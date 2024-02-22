@@ -103,6 +103,8 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 
 -   ### Home Page
     -  The homepage will feature a navbar at the top of the screen. A hero image with a message welcoming the user to the site followed by a brief about us section and a contact us form will then follow. Fixed  at the bottom of the screen will be the footer which will contain social media links. When the contact form is completed the page is refreshed with a success message at the top. A message is also displayed informing the user if they are logged in and if so then what username they are logged in as.
+    -  ![homepage_mobile_device](https://github.com/Chris-Tollan/run-tribe/assets/134441833/61f4f7c4-0b81-4780-bc72-2e64fb643da6)
+
     -  ![homepage_content](https://github.com/Chris-Tollan/run-tribe/assets/134441833/2a7997cc-2358-44eb-8b61-19ebd71ea5ee)
 
  
@@ -117,6 +119,9 @@ Whether you're seeking new challenges, training partners, or simply looking to i
     -  Run details and booking form which is only availble to logged in users. When the form is submitted the page is refreshed and a success message displayed.
        ![run_detail_booking_form](https://github.com/Chris-Tollan/run-tribe/assets/134441833/6e0942b9-5903-4866-b857-a0e2229fcd11)
 
+    -  Runs page on smaller devices
+       ![runs_mobile_device](https://github.com/Chris-Tollan/run-tribe/assets/134441833/69e7bbc9-a3f2-4259-9e16-ac38dc7db9ca)
+
  
 -   ### My Bookings
     - The my bookings page can only be accessed by a logged in user. This will display a list of all the runs the user has booked and provide them with an option to update/cancel. If cancelling the user will be asked to confirm they wish to cancel. A message is contained on each booking confirming if it has been approved or if it is pending.
@@ -128,7 +133,11 @@ Whether you're seeking new challenges, training partners, or simply looking to i
     -  Cancelling a booking
        ![confirm_delete_booking](https://github.com/Chris-Tollan/run-tribe/assets/134441833/0c3955cd-aa1a-40b3-ac72-85783ec66131)
        
-    -   When a booking is updated or deleted the user is returned to the homepage where a success message will be displayed in relation to the action taken. 
+    -   When a booking is updated or deleted the user is returned to the homepage where a success message will be displayed in relation to the action taken.
+ 
+    -   My Bookings on smaller devices
+      
+        ![my_bookings_mobile_devices](https://github.com/Chris-Tollan/run-tribe/assets/134441833/26dfa7df-6f65-4180-a2ff-22faf2916c65)
 
  
 -   ### Posts
@@ -140,6 +149,11 @@ Whether you're seeking new challenges, training partners, or simply looking to i
         
     -   Viewing a blog post and comment section when logged in. When the user comments a success message is displayed confirming the comment is awaiting approval. The user can edit or delete any comment they have submitted.
         ![blog_post_and_comment_logged_in](https://github.com/Chris-Tollan/run-tribe/assets/134441833/d63ac788-c0cc-408c-b581-403a2908cc2e)
+
+    -   Comments section on smaller devices
+      
+        ![comments_section_mobile_device](https://github.com/Chris-Tollan/run-tribe/assets/134441833/f715d586-c3e8-4909-942d-775e247d29da)
+
 
 
 -   ### Update Details

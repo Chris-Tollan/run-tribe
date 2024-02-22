@@ -83,6 +83,9 @@ Whether you're seeking new challenges, training partners, or simply looking to i
     -   ![LucidChartERDforPost](https://github.com/Chris-Tollan/run-tribe/assets/134441833/77f2c0d6-a570-46a9-85ef-c38b92caf146)
 
 ## Features
+-   ### Design implementation
+    - During the initial planning of this project the above wireframes were created however on beginning production and thinking about the target audience of this site, who I assessed to be people looking to stay active and looking to book runs and view content with ease and possibly whilst on the go throughout the day, I decided it would be best to create the site intended for mobile first use. As such minor changes were made to how the features would be displayed such as the hero image would be unique to the homepage and the runs would not be displayed in circular containers around an image. Theses changes from the wireframes to the deployed site can be seen in the images below. I believe it has been the correct decision as the deployed site has a nice easy to use feel to it with a similar display across all devices offering a good overall user experience that I think may have be hindered if the changes had not been made.
+      
 -   ### NavBar
     -  The NavBar is always located at the top of the page. It is simple and easy to navigate. Logged in users will have full access to the site whereas user who aren't logged in will only have access to limited features. On smaller devices the menu options will collapse into a burger icon.
     -  Collapsed navbar on smaller devices

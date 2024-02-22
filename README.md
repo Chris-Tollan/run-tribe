@@ -267,8 +267,63 @@ Whether you're seeking new challenges, training partners, or simply looking to i
         -    Confirm the reset in the confirmation prompt shown
         -    Run the makemigrations and migrate commands in the workspace again as normal and this resolved the issue.
 
+    -    Whilst not neccessary a bug early in the development I accidently push the details of the secret key to github. I obtained guidance re this from the Code Institute slack channel and tutor support. I was informed in order to fix this I had to created a new secret key which should be hidden appropriately to avoid it being pushed to github. I followed these steps and the current secret key has not been pushed to nor is it visable on github.
+
 
 ## Deployment
+### ElephantSQL
+An external database was created in ElephantSQL using the following steps
+1. Log in to ElephantSQL and select 'Create New Instance'
+2. Select a plan, input your details and review.
+3. Once created, use the copy icon to copy the DATBASE_URL.
+
+### Cloudinary
+Cloudinary was used to store static and media files.
+1. Log in to Cloudinary
+2. Copy your CLOUDINARY_URL
+
+### Before Deployment
+Important points for before deployment
+1. The requirements for the project were added to a requirements.txt file using the command 'pip3 freeze > requirements.txt' in the terminal.
+2. In .gitignore, include env.py to ensure sensitive information is not pushed to GitHub. 
+3. In settings.py, link SECRET_KEY to the env.py file where the secret key variable is defined.
+3. In settings.py, set 'DEBUG = False' to prevent verbose error pages and to prevent Django serving static files itself instead of relying on Cloudinary.
+4. It is necessary to make migrations and migrate the models to the database before deployment.
+
+### Deployment to Heroku
+This app was deployed to Heroku using the following steps.
+1. Log in to Heroku and from the Dashboard, select 'Create New App'
+2. Create a unique name for your app, and select your location.
+3. Open the settings tab, Click 'Reveal Config Vars', and set the Config Vars for production (values are sensitive and have been left out). 
+
+Config Vars for development of this project:
+- DATABASE_URL
+- SECRET_KEY
+- PORT = 8000
+- DISABLE_COLLECTSTATIC = 1
+- CLOUDINARY_URL
+
+Config Vars for production:
+- DATABASE_URL
+- SECRET_KEY
+- CLOUDINARY_URL
+
+4. Click 'Add buildpack'. The buildpacks will install further dependencies that are not included in the requirements.txt. For this project, the buildpack required is Python.
+5. Select the Deploy tab. You can select to view build log to watch the project being built.
+6. When successfully built, a message appears in the build log showing the URL'https://run-tribe-cd76c944e137.herokuapp.com/ deployed to Heroku'. 
+7. Click 'Open App' or 'View' to open the deployed app.
+
+### Forking
+1. From the GitHub repository, click on 'Fork', 'Create a Fork'
+2. Change the name and description of the fork as required.
+3. Select to copy only the main branch or copy all branches.
+4. Click 'Create a Fork'. A new repository will appear in your GitHub repositories if successful.
+
+### Cloning
+1. From the GitHub repository, click 'Code' and copy the link.
+1. Open git bash and change the working directory to the desired location.
+1. Enter 'git clone' and paste the link.
+1. Press Enter to create your local clone.
 
 ## Future Development
 -   The future development of this project will include:-

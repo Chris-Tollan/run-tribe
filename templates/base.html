@@ -93,7 +93,7 @@
             </div>
         </div>
     </nav>
-
+    <!-- displays message confirming if user is logged in or not -->
     <main class="flex-shrink-0 main-bg">
         {% if user.is_authenticated %}
         <p class="text-end m-3">Welcome back {{ user.username }}!</p>
@@ -109,8 +109,10 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
+        <!-- developer and declaration info -->
         <p class="m-0 text-center">Created by Christopher Tollan</p>
         <p class="m-0 text-center">For educational purposes only</p>
+        <!-- social links -->
         <p class="m-0 text-center">Follow us: <a href="https://facebook.com" target="_blank" rel="noopener"
                 aria-label="Visit our Facebook page (opens in a new tab)"><i
                     class="fab fa-facebook-square ms-3"></i></a>
@@ -123,6 +125,7 @@
                 aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square ms-3"></i></a>
         </p>
         {% if user.is_authenticated %}
+        <!-- if user is logged in option to update account details will be displayed here -->
         <p class="m-0 text-center"><a href="{% url 'user_profile' %}"><i class="fas fa-cog"></i> Make changes to your
                 account here <i class="fas fa-cog"></i></a></p>
         {% endif %}

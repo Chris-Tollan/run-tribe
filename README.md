@@ -526,6 +526,7 @@ Config Vars for production:
     -    User profile section to further enhance the feeling of the website being an online community for local runners to interact.
     -    The ability for selected users to have 'moderator' permissions allowing them to assist in the maintenance of selected aspects of the site.
     -    The ability to leave comments on runs so that other users can read feedback and user experiences about the different running groups.
+    -    Add feature so the user receives a confirmation of booking email or text message.
 
 ## Credits/Acknowleldgements/Code
 -   I obtained code directly from the following which was either implemented more or less the same of used and then adapted for the purpose of meeting the needs of this project:-

@@ -60,8 +60,12 @@ Whether you're seeking new challenges, training partners, or simply looking to i
         -   For the Header content the font Bebas Neue from google fonts will be used
              ![BebasNeusFontExample](https://github.com/Chris-Tollan/run-tribe/assets/134441833/8fa43602-38cc-4e58-847b-b2e21e652814)
         -   For all other text content throught the site the font Roboto Condensed from google fonts will be used
-             ![RobotoCondensedFontExample](https://github.com/Chris-Tollan/run-tribe/assets/134441833/40b3d476-be8d-4d2d-b94a-be5a4fc46e7a)           
+             ![RobotoCondensedFontExample](https://github.com/Chris-Tollan/run-tribe/assets/134441833/40b3d476-be8d-4d2d-b94a-be5a4fc46e7a)
 
+
+    -   #### Imagery
+        -   The image chosen for the hero image displayed on the homepage was chosen due to its bright colour and its immediate striking nature which leaves the user with no doubt about what this websites purpose is.
+          
 -   ### Wireframes
 
     -   For this project Balsamiq Wireframes was used to produce wireframes for each page of the site and how it is intended to be displayed across mobile and tablet tablet devices as well as desktop computers.
@@ -400,6 +404,40 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 
 
 ## Deployment
+## Cloning this repository
+
+In order to work on this repository you will first need to clone it.
+
+**Instructions to clone the repository**:
+
+1 - While in the GitHub repository, click on the green code button.
+
+2 - Copy the link.
+
+3 - In your IDE or local coding environment use the link to open the repository. 
+
+For example: in CodeAnywhere
+- Click on 'Add new workspace'
+- You will then be given the option to 'Create from your project repository' and a box in which to paste the link
+- CodeAnywhere will now open a new workspace containing the repository.
+- You should now be set up ready to work on the repository.
+
+## Forking a branch
+
+In order to protect the main branch while you work on something new, essential when working as part of a team or when you want to experiment with a new feature, you will need to fork a branch.
+
+**Instructions to fork the repository**:
+
+1 - While in the GitHub repository, click on the branch symbol and text indicating the number of branches.
+
+2 - This will load details on current branches. Click on the green 'New branch' button.
+
+3 - Enter a name for the new branch and then click the green 'create new branch' button.
+
+4 - Your new branch should now have appeared on the screen.
+
+5 - Clicking on the new branch and then following the steps for cloning will allow you to open up and work on this branch.
+
 ### ElephantSQL
 An external database was created in ElephantSQL using the following steps
 1. Log in to ElephantSQL and select 'Create New Instance'
@@ -437,22 +475,10 @@ Config Vars for production:
 - SECRET_KEY
 - CLOUDINARY_URL
 
-4. Click 'Add buildpack'. The buildpacks will install further dependencies that are not included in the requirements.txt. For this project, the buildpack required is Python.
+4. Click 'Add buildpack'. The buildpacks will install further dependencies that are not included in the requirements.txt.
 5. Select the Deploy tab. You can select to view build log to watch the project being built.
 6. When successfully built, a message appears in the build log showing the URL'https://run-tribe-cd76c944e137.herokuapp.com/ deployed to Heroku'. 
 7. Click 'Open App' or 'View' to open the deployed app.
-
-### Forking
-1. From the GitHub repository, click on 'Fork', 'Create a Fork'
-2. Change the name and description of the fork as required.
-3. Select to copy only the main branch or copy all branches.
-4. Click 'Create a Fork'. A new repository will appear in your GitHub repositories if successful.
-
-### Cloning
-1. From the GitHub repository, click 'Code' and copy the link.
-1. Open git bash and change the working directory to the desired location.
-1. Enter 'git clone' and paste the link.
-1. Press Enter to create your local clone.
 
 ## Future Development
 -   The future development of this project will include:-
@@ -462,8 +488,11 @@ Config Vars for production:
 
 ## Credits/Acknowleldgements/Code
 -   I obtained code directly from the following which was either implemented more or less the same of used and then adapted for the purpose of meeting the needs of this project:-
-    -    For the initial set up of this project and then the creation the blog and comments section I followed the steps of the Code Institure 'I think therefore I blog' walkthrough project. Boilerplate code, NavBar and footer code was then adapted from the walkthrough project to meet the design aspect of this project
-    -    When creating the views for Updating and Deleting Bookings I found the following guidance which I used and adapted to meet the need of this project [www.geeksforgeeks.org/deleteview-class-based-views-django](https://www.geeksforgeeks.org/deleteview-class-based-views-django/) and [www.geeksforgeeks.org/updateview-class-based-views-django](https://www.geeksforgeeks.org/updateview-class-based-views-django/)
+    -    For the initial set up of this project and then the creation the blog and comments section including the JavaScript used for the Edit/Delete comments features I followed the steps of the Code Institute 'I think therefore I blog' walkthrough project. Boilerplate code, NavBar and footer code was then adapted from the walkthrough project to meet the design aspect of this project
+    -    When creating the views for Updating and Deleting Bookings I found the following guidance which I used and adapted to meet the need of this project
+        -    [www.geeksforgeeks.org/deleteview-class-based-views-django](https://www.geeksforgeeks.org/deleteview-class-based-views-django/)
+         and
+        -    [www.geeksforgeeks.org/updateview-class-based-views-django](https://www.geeksforgeeks.org/updateview-class-based-views-django/)
 
 
 ### Content

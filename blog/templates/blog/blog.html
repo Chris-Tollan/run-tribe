@@ -7,24 +7,29 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Blog Entries Column -->
+        <!-- Blog Entries -->
         <div class="col-12 mt-3 left">
             <div class="row">
+                <!-- Loops through and populates each blog post -->
                 {% for post in post_list %}
                 <div class="col-md-8 mx-auto">
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
+                                <!-- insert placeholder image in blog post -->
                                 {% if "placeholder" in post.featured_image.url %}
+                                <!-- gets the default placeholder image -->
                                 <img class="card-img-top" src="{% static 'images/post_default_image.webp' %}"
                                     alt="placeholder image">
                                 {% else %}
+                                <!-- gets the user uploaded image -->
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
                                 </div>
                             </div>
+                            <!-- link to view full blog post -->
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <p class="class-title">{{ post.excerpt }}</p>
@@ -45,6 +50,7 @@
             </div>
         </div>
     </div>
+    <!-- present option to view next/prev list of blog posts if exists -->
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
@@ -61,5 +67,5 @@
     {% endif %}
 </div>
 
-<!-- index.html content ends here -->
+<!-- blog.html content ends here -->
 {% endblock %}

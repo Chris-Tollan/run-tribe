@@ -5,10 +5,22 @@ from django.contrib import messages
 from .models import Post, Comment
 from .forms import CommentForm
 
-# Create your views here.
+
+"""
+The following code has been taken from the
+Code Institute I therefore I Blog Walkthrough
+"""
 
 
 class PostList(generic.ListView):
+    """
+    Displays a list of blog posts that have been marked as
+    published by the admin
+    Retrieves data for each post from :model:`blog.Post`.
+    Diplays the blog posts in a list of 4 posts per page
+    **Template**
+    :template:`blog/blog.html`
+    """
     queryset = Post.objects.filter(status=1)
     template_name = "blog/blog.html"
     paginate_by = 4
@@ -17,14 +29,16 @@ class PostList(generic.ListView):
 def post_detail(request, slug):
     """
     Display an individual :model:`blog.Post`.
-
     **Context**
-
     ``post``
         An instance of :model:`blog.Post`.
-
+    ``comments``
+        All approved comments related to the post.
+    ``comment_count``
+        A count of approved comments related to the post.
+    ``comment_form``
+        An instance of :form:`blog.CommentForm`
     **Template:**
-
     :template:`blog/post_detail.html`
     """
 
@@ -60,7 +74,14 @@ def post_detail(request, slug):
 
 def comment_edit(request, slug, comment_id):
     """
-    view to edit comments
+    Display an individual comment for edit.
+    **Context**
+    ``post``
+        An instance of :model:`blog.Post`.
+    ``comment``
+        A single comment related to the post.
+    ``comment_form``
+        An instance of :form:`blog.CommentForm`
     """
     if request.method == "POST":
 
@@ -84,7 +105,14 @@ def comment_edit(request, slug, comment_id):
 
 def comment_delete(request, slug, comment_id):
     """
-    view to delete comment
+    Delete an individual comment.
+
+    **Context**
+
+    ``post``
+        An instance of :model:`blog.Post`.
+    ``comment``
+        A single comment related to the post.
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)

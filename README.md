@@ -39,11 +39,11 @@ Whether you're seeking new challenges, training partners, or simply looking to i
         - As a user, I can read information about each run so including times, dates, locations and experience level that the run is aimed at and if logged in book a place on a run of my choosing.
         - As a user, I can log in and easily cancel my booking if I am going to be unable to attend or make an update to the details I provided for the booking.
         - As an admin, I can add and manage Group Runs in order to keep the timetable relevant and up to date.
-        - As an admin, I can authorise bookings in order to ensure runs are kept to a manageable and safe number of runners.
+        - As an admin, I can authorise bookings.
 
     -   #### Articles/Blog Posts and Comments (Epic 5)
         -  As a user, I can click on an blog post so that I can access the content in its entirety.
-        -  As a user, I can log in and comment on the blog posts in order to engage with the other users of the site.
+        -  As a user, I can log in and comment on the blog posts in order to engage with the other users of the site. I can later edit or delete my comments
         - As an admin, I can authorise comments users make to blog posts in order to ensure the sites content does not become irrelevant or become of an abusive, inappropriate nature.
         - As an admin, I can create, read, update and delete blog posts in order to manage the sites content.
 
@@ -206,7 +206,7 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 ## Agile Methodology
 
 - ### Overview
-  Agile methodologies and principles were used when planning and creating this project. For the initital planning of this project I identified a number of features and split them into Epics with each epic then containing user stories of what user would look to be able to achieve when using each feature. During the development process I focussed on a specific Epic and then the user stories within that epic which I had recorded as GitHub issues and arranged on a kanBan board. When I felt the acceptance criteria of each user story was met I marked them as complete on the board. This assisted with prioritising and the continuous management of the workload related to this project.
+  Agile methodologies and principles were used when planning and creating this project. For the initital planning of this project I identified a number of features and split them into Epics with each epic then containing user stories of what user would look to be able to achieve when using each feature. During the development process I focussed on a specific Epic and then the user stories within that epic which I had recorded as GitHub issues and arranged on a kanban board. When I felt the acceptance criteria of each user story was met I marked them as complete on the board. This assisted with prioritising and the continuous management of the workload related to this project.
 
 ## Technologies Used
 
@@ -316,6 +316,47 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 | user_profile - urls.py | PASS | No errors |
 
 ### Testing User Stories from User Experience (UX) Section
+- #### Homepage and Site Navigation (Epic 1)
+
+| User Story | User Story met Yes/No |
+| --- | --- |
+| As a user, I want to easily understand the main purpose of the site and learn more about the organisation. | Yes |
+| As a user, I want to be able to easily navigate the site using the navbar to access the specific page I am interested in. | Yes |
+
+
+- #### Using Member Accounts (Epic 2)
+| User Story | User Story met Yes/No |
+| --- | --- |
+| As a user, I can create an account for the website in a straightforward manner so that I can access all features of the site. | Yes |
+| As a user, I can log in to the website so that I have the ability to book a place on a run and/or comment on an article/blog post. | Yes |
+| As a user, I can easily see if I am logged in/registered. | Yes |
+| As a user, I can easily log out from the website whenever I feel like it. | Yes |
+| As a user, I can contact the site admin to request my account details be updated/deleted | Yes |
+
+
+- #### Contact (Epic 3)
+| User Story | User Story met Yes/No |
+| --- | --- |
+| As a user, I want to be able to contact the website admins in order to provide feedback, suggest content and review runs and site content. | Yes |
+| As an admin, I can access feedback and reviews from users in order to enhance the site and its content. | Yes |
+
+
+- #### Bookings/Runs (Epic 4)
+| User Story | User Story met Yes/No |
+| --- | --- |
+| As a user, I can read information about each run so including times, dates, locations and experience level that the run is aimed at and if logged in book a place on a run of my choosing. | Yes |
+| As a user, I can log in and easily cancel my booking if I am going to be unable to attend or make an update to the details I provided for the booking. | Yes |
+| As an admin, I can add and manage Group Runs in order to keep the timetable relevant and up to date. | Yes |
+| As an admin, I can authorise bookings. | Yes |
+
+
+- #### Articles/Blog Posts and Comments (Epic 5)
+| User Story | User Story met Yes/No |
+| --- | --- |
+| As a user, I can click on an blog post so that I can access the content in its entirety. | Yes |
+| As a user, I can log in and comment on the blog posts in order to engage with the other users of the site. I can later edit or delete my comments | Yes |
+| As an admin, I can authorise comments users make to blog posts in order to ensure the sites content does not become irrelevant or become of an abusive, inappropriate nature. | Yes |
+| As an admin, I can create, read, update and delete blog posts in order to manage the sites content. | Yes |
 
 
 ### Further Testing

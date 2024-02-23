@@ -9,12 +9,32 @@ from .forms import BookingForm
 
 
 class RunList(generic.ListView):
+    """
+    Displays a list of runs that have been marked as
+    published by the admin
+    Retrieves data for each run from :model:`runs.Runs`.
+    Diplays the runs list of 8 posts per page
+    **Template**
+    :template:`runs/runs.html`
+    """
     queryset = Runs.objects.filter(status=1)
     template_name = "runs/runs.html"
     paginate_by = 8
 
 
 class RunDetail(View):
+    """
+    View for displaying details of a run and handling bookings
+    **Context**
+    ``run``
+        an instance of :model:`runs.Runs`
+    ``booking_form``
+        an instance of :form:`runs.BookingForm
+    ``booking``
+        bookings related to each booking
+    **Template:**
+    :template:`runs/book_runs.html`
+    """
 
     def get(self, request, slug, *args, **kwargs):
 
@@ -68,6 +88,15 @@ class RunDetail(View):
 
 
 class MyBookings(generic.ListView):
+    """
+    renders the my booking page with users booking
+    from :model:`runs.Booking`.
+    **Context**
+    ``user_bookings``
+        An instance of :model:`runs.Booking`
+    **Template:**
+    :template:`runs/my_bookings.html`
+    """
     def get(self, request):
         """ My Bookings page """
         user_bookings = Booking.objects.filter(user=request.user)
@@ -78,6 +107,14 @@ class MyBookings(generic.ListView):
 
 
 class BookingDeleteView(SuccessMessageMixin, DeleteView):
+    """
+    Allows user to delete their booking for a run
+    Updates the data in :model:`runs.Booking`
+    On deletion redirects user to homepage
+    Displays success messaged to user
+    **Template:**
+    :template:`runs/booking_confirm_delete.html`
+    """
     model = Booking
     template_name = "runs/booking_confirm_delete.html"
     success_url = "/"
@@ -89,6 +126,18 @@ class BookingDeleteView(SuccessMessageMixin, DeleteView):
 
 
 class BookingUpdateView(SuccessMessageMixin, UpdateView):
+    """
+    Allows user to update their contact details
+    on a booking for a run
+    Updates the data in :model:`runs.Booking`
+    On update redirects user to homepage
+    Displays success messaged to user
+    **Context**
+    ``fields``
+        an instance of :form:`runs.BookingForm
+    **Template:**
+    :template:`runs/booking_update.html`
+    """
     model = Booking
     template_name = "runs/booking_update.html"
     success_url = "/"

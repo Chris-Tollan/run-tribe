@@ -7,6 +7,9 @@ STATUS = ((0, 'Draft'), (1, 'Published'))
 
 
 class Runs(models.Model):
+    """
+    Stores a run entry related to :model: `runs.Runs`.
+    """
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     featured_image = CloudinaryField('image', default='placeholder')
@@ -23,6 +26,11 @@ class Runs(models.Model):
 
 
 class Booking(models.Model):
+    """
+     Model representing a booking made by a user for a specific run
+     Store a booking made by the user related to 
+     :model: `runs.Booking` and :model: `runs.Runs`
+    """
     title = models.ForeignKey(
         Runs, on_delete=models.CASCADE, related_name='run_booking')
     user = models.ForeignKey(

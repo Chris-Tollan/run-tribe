@@ -5,7 +5,7 @@ from cloudinary.models import CloudinaryField
 
 """
 The following code has been taken from the
-Code Institute I therefore I Blog Walkthrough
+Code Institute I think therefore I Blog Walkthrough
 """
 
 

@@ -2,6 +2,9 @@ from django.db import models
 
 
 class ContactUs(models.Model):
+    """
+    Stores a contact us message
+    """
     name = models.CharField(max_length=200)
     email = models.EmailField()
     message = models.TextField()

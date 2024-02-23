@@ -245,13 +245,142 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 
 ## Testing
 
+### HTML
+- All HTML templates deployed for this project have been tested using the [W3C HTML Validator](https://validator.w3.org/) with the following results
 
+| Template | Result | Comment |
+| --- | --- | --- |
+| index.html | PASS ||
+| runs.html | PASS ||
+| book_run.html | PASS ||
+| my_bookings.html | PASS ||
+| booking_update.html | PASS ||
+| booking_confirm_delete.html | PASS ||
+| blog.html.html | PASS ||
+| post_detail.html.html | PASS ||
+| update_user_details.html | PASS ||
+| login.html | PASS ||
+| logout.html | PASS ||
+| signup.html | FAIL | 4 x Error messages displayed as shown below|
+
+- All the HTML files that successfully passed the validator displayed the following upon being test
+
+    ![pass_validator](https://github.com/Chris-Tollan/run-tribe/assets/134441833/26cbec18-7298-4dc3-9715-c93d4c38e16f)
+
+
+- The signup.html file displayed 4 x error messages as shown
+
+  ![signup_validation_errors](https://github.com/Chris-Tollan/run-tribe/assets/134441833/b33252c7-d0c2-4d22-a234-904ce392d5ba)
+
+
+### CSS
+- The CSS code written for this project was tested using the [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) and successfully passed with no errors.
+
+  ![image](https://github.com/Chris-Tollan/run-tribe/assets/134441833/db27e9c2-d1ea-47af-9738-adb81eea71f1)
+
+
+### JavaScript
+- Javascript used within this project was tested using the [JSHint Validator](https://jshint.com/) and successfully passed with no errors.
+
+  ![js_hint_testing_for_comments_js](https://github.com/Chris-Tollan/run-tribe/assets/134441833/412135e2-8bd1-4656-aa3c-6d7da0b06a7d)
+
+
+###
+- Python code written for this project was tested using the [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/). As shown below all files successfully passed with no errors.
+
+| File | Pass/Fail | Me | 
+| --- | --- | --- |
+| runs - admin.py | PASS | No errors |
+| runs - models.py | PASS | No errors |
+| runs - views.py | PASS | No errors |
+| runs - forms.py | PASS | No errors |
+| runs - urls.py | PASS | No errors |
+| blog - admin.py | PASS | No errors |
+| blog - models.py | PASS | No errors |
+| blog - views.py | PASS | No errors |
+| blog - forms.py | PASS | No errors |
+| blog - urls.py | PASS | No errors |
+| home - admin.py | PASS | No errors |
+| home - models.py | PASS | No errors |
+| home - views.py | PASS | No errors |
+| home - forms.py | PASS | No errors |
+| home - urls.py | PASS | No errors |
+| user_profile - admin.py | PASS | No errors |
+| user_profile - models.py | PASS | No errors |
+| user_profile - views.py | PASS | No errors |
+| user_profile - forms.py | PASS | No errors |
+| user_profile - urls.py | PASS | No errors |
 
 ### Testing User Stories from User Experience (UX) Section
 
 
 ### Further Testing
+#### Manual Testing
 
+### Homepage
+| Feature | Test | Expected Result | Pass/Fail |
+| --- | --- |--- | --- |
+| Logged in/out Message | View page | Users should see a message informing them if they are currently logged in or out | Pass |
+| Contact Form | Complete form | Form should submit successfuly, display success message for the user. Submitted form can be viewed in the admin panel and marked as read | Pass |
+
+### Runs page
+| Feature | Test | Expected Result | Pass/Fail |
+| --- | --- |--- | --- |
+| Run information | Logged out users shouldn't be able to book runs | The excerpt of each unique run should be displayed however looged out users are required to login/register to proceed any further | Pass |
+| Run information | View each run | The excerpt of each unique run should be displayed individually to logged in users with the option for them to select a run for more information | Pass |
+| Create/update/delete Run | Create/update/delete run in admin panel | Admin can create/update/delete a run in the admin panel | Pass |
+
+### Book Run page
+| Feature | Test | Expected Result | Pass/Fail |
+| --- | --- |--- | --- |
+| View run detail | Select a run in runs page and view | All information about the run selected by the user should be displayed, including any attached images | Pass |
+| Book run | Complete form and book | Users can successully book a place on a run and see a success message confirming this  | Pass |
+| Booking sent to admin | View bookings in admin | Admin can view booking made by users in the admin panel and can approve these bookings | Pass |
+
+### My Bookings
+| Feature | Test | Expected Result | Pass/Fail |
+| --- | --- |--- | --- |
+| View Bookings | Log in and navigate to My Bookings page | Logged in users should be able to see a list of bookings they have made and be able to tell if the booking is confirmed or not | Pass |
+| Update booking | Complete form and submit update | Users can update their contact details for bookings and see a success message re their changes. Admins should see the changes in the admin panel  | Pass |
+| Delete booking | Click delete booking button | Users can delete their booking and receive a success message confirming deletion. This is also updated in the admin panel  | Pass |
+
+### Blog, Post Details and Comments
+| Feature | Test | Expected Result | Pass/Fail |
+| --- | --- |--- | --- |
+| View brief info about each post  | Navigate to Blog page and view content | Users can view a list of blog posts containing brief details about each post | Pass |
+| Select a post to view full details | Select a blog post | On clicking a blog post user should be able to view full details of the post  | Pass |
+| View comments | Navigate to comments section | View approved comments and view users own comments that are pending approval | Pass |
+| Add comments | Navigate to comments section and submit a comment | Logged in users can add a comment to any blog post. Logged out users are need to login to add a comment | Pass |
+| Edit comments | Navigate to comments section and edit a comment | Logged in user can edit their own comments | Pass |
+| Delete comments | Navigate to comments section and delete a comment | Logged in user can delete their own comments | Pass |
+| Feedback for add/edit/delete comment | Add/Edit/Delete comment | Logged in user receives a success message when using these features | Pass |
+| Add blog post in admin panel | Add blog post | Admin user can add a blog post which can be published or kept as a draft | Pass |
+| Approve comments in admin panel | Approve a comment | Admin user can approve a comment submitted to a blog post  | Pass |
+
+### User update details page
+| Feature | Test | Expected Result | Pass/Fail |
+| --- | --- |--- | --- |
+| Complete form to update/delete account | Complete form and view in admin panel | User can submit a form for update/delete of their account which the admin can view in the admin panel and marked as read | Pass |
+
+### NavBar
+| Feature | Test | Expected Result | Pass/Fail |
+| --- | --- |--- | --- |
+| Diplays at the top of the screen and is responsive across devices | View site on multiple devices | Navbar remains at top of screen, displays menu in a manner suited to the viewing device | Pass |
+| Logged out users | View nav bar whilst logged out | Logged out users can't view the My Bookings or Log Out option in the navbar and instead see Register and Login | Pass |
+| Logged in users | View navbar whilst logged in | Logged in users can access My Bookings and also sign out from the navbar  | Pass |
+
+### Footer
+| Feature | Test | Expected Result | Pass/Fail |
+| --- | --- |--- | --- |
+| Social links | Select each social link | Social links in the footer direct the user to each respective social media site | Pass |
+| Update account settings | View footer whilst logged in and select option | Logged in users can navigate to the update user details page from here  | Pass |
+
+### Signup/Login/Logout
+| Feature | Test | Expected Result | Pass/Fail |
+| --- | --- |--- | --- |
+| Create Account | Navigate to register page and complete form | Create account for site successfully | Pass |
+| Login to account | Navigate to login page and complete form | Successfully login and be notified of what user you are logged in as  | Pass |
+| Logout of account | Navigate to logout page and confirm signout | Users can signout from their account when finished using the site | Pass |
 
 ### Known Bugs
 -   During development a number of small issues were encountered and overcome

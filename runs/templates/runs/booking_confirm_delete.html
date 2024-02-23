@@ -2,13 +2,16 @@
 {% block content %}
 {% load static %}
 
+<!-- booking_confirm_delete.html content starts here -->
 <div class="container-fluid">
     <div class="row text-center">
+        <!-- header -->
         <h2>Cancel your booking</h2>
 
         <div class="container">
             <div class="col-12 mt-3">
                 <div class="row card-deck">
+                    <!-- form to delete booking -->
                     <form method="post">{% csrf_token %}
                         <p>Are you sure you want to cancel your place for "{{ booking.title }}"?</p>
                         <input class="btn btn-danger mb-4 mt-4" type="submit" value="Confirm">
@@ -19,5 +22,5 @@
     </div>
 </div>
 
-
+<!-- booking_confirm_delete.html content ends here -->
 {% endblock %}

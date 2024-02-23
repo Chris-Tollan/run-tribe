@@ -9,15 +9,18 @@
     <div class="container">
       <section class="col-12 mt-3">
         <div class="row card-deck">
+          <!-- loops through and publishes each approved run -->
           {% for run in runs_list %}
           <div class="col-md-3">
             <div class="card mb-2">
               <div class="card-body">
                 <h4 class="title-text">{{ run.title | safe }}</h4>
                 <article class="text-center">{{ run.excerpt | safe }}</article>
+                <!-- if user logged in allows them to view more information about a run -->
                 {% if user.is_authenticated %}
                 <a href="{% url 'run_detail' run.slug %}" class="btn btn-book">More Information</a>
                 {% else %}
+                <!-- if not logged in user prompted to log in or create an account -->
                 <p>If you are already a member of the tribe then please <a class="link" href="{{ login_url }}">sign
                     in</a> to book a space with this running group</p>
                 <p>If you haven't created an account yet then <a class="link" href="{{ signup_url }}">sign up</a>
@@ -31,6 +34,7 @@
       </section>
     </div>
   </div>
+  <!-- if runs continue to another page this allows user to navigate to next/prev page -->
   {% if is_paginated %}
   <nav aria-label="Page navigation">
     <ul class="pagination justify-content-center">
@@ -49,4 +53,5 @@
   {% endif %}
 </div>
 
+<!-- runs.html content ends here -->
 {% endblock %}

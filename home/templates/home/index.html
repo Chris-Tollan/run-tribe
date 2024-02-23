@@ -3,11 +3,13 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
+<!-- index.html content starts here -->
 <!-- Hero image -->
 <div class="container-xxl">
     <img class="hero-image" src="{% static 'images/running_hero_image.webp' %}" alt="hero_image">
 </div>
 
+<!-- displays django messages -->
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2">
@@ -21,13 +23,13 @@
         </div>
     </div>
 </div>
+
+<!-- Site information and purpose explained here -->
 <div class="container">
     <div class="row">
         <div class="col card mb-2 mt-3 left top">
             <div class="card-body">
-                <!-- Welcome title goes in these h1 tags -->
                 <h1>Welcome to RunTribe</h1>
-                <!-- About RunTribe information goes here -->
                 <p>Welcome to RunTribe - the ultimate online platform for runners of all fitness levels located within the town of
                 Motherwell, Scotland. Our website brings together a passionate community of runners, providing them with the opportunity
                 to connect, explore, and enhance their running experience.</p>                
@@ -52,12 +54,15 @@
                 adventures awaits you at RunTribe!</p>
             </div>
         </div>
+        <!-- Contact Us section -->
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 my-5">
+                <!-- information about contacting the site -->
                 <h2>Contact Us</h2>
                 <p>If you have any questions for us, any ideas for content on 
                     this site or any runs you'd like to suggest then please 
                     get in touch by filling out the form below...</p>
+                <!-- form for contact the site -->
                 <form method="post">
                     {{ contact_us | crispy }}
                     {% csrf_token %}
@@ -67,4 +72,6 @@
         </div>
     </div>
 </div>
+
+<!-- index.html content ends here -->
 {% endblock content %}

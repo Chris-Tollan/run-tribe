@@ -3,6 +3,10 @@ from django.contrib.auth.models import User
 
 
 class UserUpdate(models.Model):
+    """
+    Stores a details submitted by user for
+    account updates
+    """
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='user')
     email = models.CharField()

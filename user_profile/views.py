@@ -4,6 +4,18 @@ from .forms import UserUpdate
 
 
 def update_user_details(request):
+    """
+    Renders the update_user_details page
+    with user update form
+    allows the user to inform the admin of changes
+    they wish to make to their account
+    displays success message on submission
+    ** Context **
+    ``user_update``
+        An instance of :form:`user_profile.UserUpdate`
+    **Template**
+    :template:`user_profile/update_user_details.html`
+    """
 
     if request.method == "POST":
         user_update = UserUpdate(data=request.POST)

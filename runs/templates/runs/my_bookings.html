@@ -41,7 +41,8 @@
                                 </p>
                                 {% endif %}
                                 <!-- displays booking title and option to delete/edit -->
-                                <h4>{{ booking.title }}</h4>
+                                <h4>{{ booking.run.title | safe }}</h4>
+                                <p>{{ booking.run.excerpt | safe }}</p>
                                 <a href="{% url 'update_booking' booking.id %}" class="btn btn-edit mb-4 mt-4">Update
                                     Booking</a>
                                 <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger mb-4 mt-4">Delete

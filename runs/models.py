@@ -31,7 +31,7 @@ class Booking(models.Model):
      Store a booking made by the user related to 
      :model: `runs.Booking` and :model: `runs.Runs`
     """
-    title = models.ForeignKey(
+    run = models.ForeignKey(
         Runs, on_delete=models.CASCADE, related_name='run_booking')
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='user_booking')
@@ -39,4 +39,4 @@ class Booking(models.Model):
     phone = models.CharField(max_length=12, blank=True)
 
     def __str__(self):
-        return f'{self.title} is booked by {self.user}'
+        return f'{self.run.title} is booked by {self.user}'

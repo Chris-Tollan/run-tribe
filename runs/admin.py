@@ -5,6 +5,9 @@ from .models import Runs, Booking
 
 @admin.register(Runs)
 class RunsAdmin(SummernoteModelAdmin):
+    """
+    registers runs model in admin
+    """
 
     list_display = ('title', 'slug', 'status', 'updated_on')
     search_fields = ['title', 'description']

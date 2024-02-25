@@ -276,6 +276,8 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 
   ![signup_validation_errors](https://github.com/Chris-Tollan/run-tribe/assets/134441833/b33252c7-d0c2-4d22-a234-904ce392d5ba)
 
+  -    After some research and discussion with my mentor I was able to confirm that these errors are a result of the form template used in the Django allauth signup form. They are not as a result of any the code I have written for this project. The signup page has been thoroughly tested and the errors appear to have no impact of the functionality or display of the page.
+
 
 ### CSS
 - The CSS code written for this project was tested using the [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) and successfully passed with no errors.
@@ -289,7 +291,7 @@ Whether you're seeking new challenges, training partners, or simply looking to i
   ![js_hint_testing_for_comments_js](https://github.com/Chris-Tollan/run-tribe/assets/134441833/412135e2-8bd1-4656-aa3c-6d7da0b06a7d)
 
 
-###
+### Python
 - Python code written for this project was tested using the [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/). As shown below all files successfully passed with no errors.
 
 | File | Pass/Fail | Me | 
@@ -314,6 +316,42 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 | user_profile - views.py | PASS | No errors |
 | user_profile - forms.py | PASS | No errors |
 | user_profile - urls.py | PASS | No errors |
+
+### Lighthouse testing
+- #### index.html
+    ![homepage_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/f16a040f-42fa-433e-9f96-c61bfcf308c5)
+
+- #### runs.html
+    ![runs_page_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/ea214c2c-0a2f-427c-b6c3-5286dc7f8544)
+
+- #### book_run.html
+    
+- #### my_booking.html
+    ![my_bookings_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/b33a77eb-2dfe-4d2c-abc0-8cf966de5574)
+
+- #### booking_update.html
+    ![update_booking_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/1b7fef00-d8ec-4a62-96d4-b60a91cae3f1)
+
+- #### booking_confirm_delete.html
+    ![booking_confirm_delete_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/bd6f0494-7f8f-424a-9acc-5fb3e178a5ef)
+
+- #### blog.html
+- #### post_detail.html
+    ![post_detail_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/e56f2a67-ec71-4dce-b733-104eae775758)
+
+- #### update_user_details.html
+    ![update_user_details_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/8722f962-5bd2-4520-a837-41b1698c13a3)
+
+- #### signup.html
+    ![signup_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/94819a54-d405-4dca-a11b-e577402a798c)
+
+- #### login.html
+    ![login_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/37761b13-6fe8-4443-b955-a18ad59be025)
+
+- #### logout.html
+    ![logout_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/fcdd2bbc-d966-48b0-9021-82e4e1183fa0)
+
+
 
 ### Testing User Stories from User Experience (UX) Section
 - #### Homepage and Site Navigation (Epic 1)

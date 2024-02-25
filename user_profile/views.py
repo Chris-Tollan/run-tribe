@@ -28,7 +28,6 @@ def update_user_details(request):
             )
 
     user_update = UserUpdate()
-    """ User Update Page """
     return render(
         request,
         "user_profile/update_user_details.html",

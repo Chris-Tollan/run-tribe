@@ -31,7 +31,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-chris-tollan-run-tribe-ghcxevdx0p.us2.codeanyapp.com',
-    '.herokuapp.com',
+    'run-tribe-cd76c944e137.herokuapp.com/',
     '8000-christollan-runtribe-z065dw669fh.ws-eu108.gitpod.io'
 ]
 

@@ -25,7 +25,6 @@ def home(request):
             )
 
     contact_us = ContactUs()
-    """ Homepage """
     return render(
         request,
         "home/index.html",

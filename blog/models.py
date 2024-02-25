@@ -3,12 +3,6 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 
-"""
-The following code has been taken from the
-Code Institute I think therefore I Blog Walkthrough
-"""
-
-
 # Create your models here.
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -30,6 +24,9 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
+        """
+        orders posts by date created on
+        """
         ordering = ["-created_on"]
 
     def __str__(self):
@@ -50,8 +47,10 @@ class Comment(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
+        """
+        orders comments by created on
+        """
         ordering = ["created_on"]
 
     def __str__(self):
         return f"Comment {self.body} by {self.author}"
-        

@@ -203,6 +203,9 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 - ### Logout
     - The logout option can be selected from the navbar. The logout screen will ask the user if they are sure they want to log out before then logging them out.
     -   ![sign_out_page](https://github.com/Chris-Tollan/run-tribe/assets/134441833/212ae740-f6aa-40da-b6b0-15bf842ba3db)
+ 
+- ### Error pages
+    - Custom 404 and 500 error pages have been created and styled to the theme of the website. These have been tested and are working as expected.
 
 
 ## Agile Methodology

@@ -246,6 +246,7 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 - W3C Validator - code validation tool used for HTML and CSS.
 - Developer Tools - used during testing, debugging and styling.
 - [Python Debugger](https://docs.python.org/3/library/pdb.html) - Python debugger used to fix bug when implemented booking form
+- [CloudConvert](https://cloudconvert.com/) - Used to compress and convert images to webp.
 
 ## Testing
 
@@ -317,39 +318,58 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 | user_profile - forms.py | PASS | No errors |
 | user_profile - urls.py | PASS | No errors |
 
+
 ### Lighthouse testing
+    - Google Lighthouse Testing has been carried out for every page on the website and all pages score high. The only slight dip in a score is for Best Practices on the blog.html page. From reviewing the issues presented from the lighthouse test and discussing these with both my mentor and peers over the Code Institute slack channel it would appear this is common when cloudinary is used. For my images used in this projece I have converted all of them to webp format and compressed the size of each image using cloudconvert. As documented in the future deployments section of this README I intend to read up on using the Django_resized package in order to automatically compress image sizes.
+
+    
 - #### index.html
     ![homepage_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/f16a040f-42fa-433e-9f96-c61bfcf308c5)
+  
 
 - #### runs.html
     ![runs_page_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/ea214c2c-0a2f-427c-b6c3-5286dc7f8544)
+  
 
 - #### book_run.html
-    
+    ![book_run_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/a77672a9-b46b-4323-bf14-e147fcba3d34)
+  
+
 - #### my_booking.html
     ![my_bookings_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/b33a77eb-2dfe-4d2c-abc0-8cf966de5574)
+  
 
 - #### booking_update.html
     ![update_booking_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/1b7fef00-d8ec-4a62-96d4-b60a91cae3f1)
+  
 
 - #### booking_confirm_delete.html
     ![booking_confirm_delete_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/bd6f0494-7f8f-424a-9acc-5fb3e178a5ef)
+  
 
 - #### blog.html
+    ![blog_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/d53b5448-cd42-4127-b2b4-2c4be2e80261)
+  
+
 - #### post_detail.html
     ![post_detail_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/e56f2a67-ec71-4dce-b733-104eae775758)
+  
 
 - #### update_user_details.html
     ![update_user_details_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/8722f962-5bd2-4520-a837-41b1698c13a3)
+  
 
 - #### signup.html
     ![signup_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/94819a54-d405-4dca-a11b-e577402a798c)
+  
 
 - #### login.html
     ![login_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/37761b13-6fe8-4443-b955-a18ad59be025)
+  
 
 - #### logout.html
     ![logout_lighthouse_testing](https://github.com/Chris-Tollan/run-tribe/assets/134441833/fcdd2bbc-d966-48b0-9021-82e4e1183fa0)
+  
 
 
 
@@ -565,6 +585,7 @@ Config Vars for production:
     -    The ability for selected users to have 'moderator' permissions allowing them to assist in the maintenance of selected aspects of the site.
     -    The ability to leave comments on runs so that other users can read feedback and user experiences about the different running groups.
     -    Add feature so the user receives a confirmation of booking email or text message.
+    -    Consider the use to the django_resized package to automatically convert and compress users images to webp format.
 
 ## Credits/Acknowleldgements/Code
 -   I obtained code directly from the following which was either implemented more or less the same of used and then adapted for the purpose of meeting the needs of this project:-

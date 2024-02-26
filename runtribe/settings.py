@@ -35,7 +35,10 @@ ALLOWED_HOSTS = [
     '8000-christollan-runtribe-z065dw669fh.ws-eu108.gitpod.io'
 ]
 
-CSRF_TRUSTED_ORIGINS = ["https://8000-christollan-runtribe-z065dw669fh.ws-eu108.gitpod.io"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://8000-christollan-runtribe-z065dw669fh.ws-eu108.gitpod.io",
+    "https://run-tribe-cd76c944e137.herokuapp.com/"    
+]
 
 
 # Application definition

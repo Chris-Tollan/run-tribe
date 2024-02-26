@@ -83,7 +83,7 @@ Whether you're seeking new challenges, training partners, or simply looking to i
     -   Entity Relationship Diagrams were created for each model as shown below
       
     -  #### Booking ERD
-    -   ![booking_erd](https://github.com/Chris-Tollan/run-tribe/assets/134441833/f1c61436-2cb2-4725-b639-be7b6028f2e5)
+    -   ![booking_erd](https://github.com/Chris-Tollan/run-tribe/assets/134441833/7a84fc18-dd4d-4fdb-ba7e-29c591f21216)
 
 
     -  #### Post and Comment ERD 
@@ -143,7 +143,8 @@ Whether you're seeking new challenges, training partners, or simply looking to i
  
 -   ### My Bookings
     - The my bookings page can only be accessed by a logged in user. This will display a list of all the runs the user has booked and provide them with an option to update/cancel. If cancelling the user will be asked to confirm they wish to cancel. A message is contained on each booking confirming if it has been approved or if it is pending.
-    -  ![my_bookings_page](https://github.com/Chris-Tollan/run-tribe/assets/134441833/44b95859-6a39-4f47-8546-6cfef54c630d)
+    -  ![my_bookings](https://github.com/Chris-Tollan/run-tribe/assets/134441833/de5da372-b430-4a1c-aa38-c02aaacb4018)
+
       
     -   Updating a booking
         ![update_booking](https://github.com/Chris-Tollan/run-tribe/assets/134441833/d66937b8-2096-4512-96a6-d5a4e30dd80f)
@@ -155,7 +156,8 @@ Whether you're seeking new challenges, training partners, or simply looking to i
  
     -   My Bookings on smaller devices
       
-        ![my_bookings_mobile_devices](https://github.com/Chris-Tollan/run-tribe/assets/134441833/26dfa7df-6f65-4180-a2ff-22faf2916c65)
+        ![my_bookings_smaller_devices](https://github.com/Chris-Tollan/run-tribe/assets/134441833/f9953e3e-d0de-4ba2-998d-ca7ffb2ec305)
+
 
  
 -   ### Posts
@@ -201,6 +203,9 @@ Whether you're seeking new challenges, training partners, or simply looking to i
 - ### Logout
     - The logout option can be selected from the navbar. The logout screen will ask the user if they are sure they want to log out before then logging them out.
     -   ![sign_out_page](https://github.com/Chris-Tollan/run-tribe/assets/134441833/212ae740-f6aa-40da-b6b0-15bf842ba3db)
+ 
+- ### Error pages
+    - Custom 404 and 500 error pages have been created and styled to the theme of the website. These have been tested and are working as expected.
 
 
 ## Agile Methodology
@@ -588,7 +593,7 @@ Config Vars for production:
     -    Consider the use to the django_resized package to automatically convert and compress users images to webp format.
 
 ## Credits/Acknowleldgements/Code
--   I obtained code directly from the following which was either implemented more or less the same of used and then adapted for the purpose of meeting the needs of this project:-
+-   I obtained code directly from the following which was either implemented more or less the same as or used and then adapted for the purpose of meeting the needs of this project:-
     -    For the initial set up of this project and then the creation the blog and comments section including the JavaScript used for the Edit/Delete comments features I followed the steps of the Code Institute 'I think therefore I blog' walkthrough project. Boilerplate code, NavBar and footer code was then adapted from the walkthrough project to meet the design aspect of this project
     -    When creating the views for Updating and Deleting Bookings I found the following guidance which I used and adapted to meet the need of this project
         -    [www.geeksforgeeks.org/deleteview-class-based-views-django](https://www.geeksforgeeks.org/deleteview-class-based-views-django/)
@@ -602,7 +607,7 @@ Config Vars for production:
 
 ### Media
 
--   The images used in this project were obtain from Google Images with care taken to ensure advanced search options were implemented to make sure only images permitted to be used were obtain.
+-   All images were obtained from Google Images with advanced search settings being used to ensure the images used are fully available for reuse and that there was no copyright infringement.
 
 ### Acknowledgements
 

@@ -13,7 +13,7 @@
                 <div class="row card-deck">
                     <!-- form to delete booking -->
                     <form method="post">{% csrf_token %}
-                        <p>Are you sure you want to cancel your place for "{{ booking.title }}"?</p>
+                        <p>Are you sure you want to cancel your place for "{{ booking.run.title }}"?</p>
                         <input class="btn btn-danger mb-4 mt-4" type="submit" value="Confirm">
                     </form>
                 </div>

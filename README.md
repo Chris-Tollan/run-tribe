@@ -593,7 +593,7 @@ Config Vars for production:
     -    Consider the use to the django_resized package to automatically convert and compress users images to webp format.
 
 ## Credits/Acknowleldgements/Code
--   I obtained code directly from the following which was either implemented more or less the same of used and then adapted for the purpose of meeting the needs of this project:-
+-   I obtained code directly from the following which was either implemented more or less the same as or used and then adapted for the purpose of meeting the needs of this project:-
     -    For the initial set up of this project and then the creation the blog and comments section including the JavaScript used for the Edit/Delete comments features I followed the steps of the Code Institute 'I think therefore I blog' walkthrough project. Boilerplate code, NavBar and footer code was then adapted from the walkthrough project to meet the design aspect of this project
     -    When creating the views for Updating and Deleting Bookings I found the following guidance which I used and adapted to meet the need of this project
         -    [www.geeksforgeeks.org/deleteview-class-based-views-django](https://www.geeksforgeeks.org/deleteview-class-based-views-django/)
